@@ -1,0 +1,56 @@
+/* Logo Font */
+/* font-family: 'Bungee', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+/* Text Font */
+/* font-family: 'Paytone One', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+
+/* Colours  */
+:root {
+  --main-light: #8dd3df;
+  --main-dark: #152b2f;
+  --main-white: #ffffff;
+}
+
+/* -------------------------------------- */
+
+.Header {
+  text-align: center;
+  color: var(--main-white);
+  background-color: var(--main-light);
+  font-family: "Bungee", cursive;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.HeaderContainer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-logo {
+  text-align: left;
+  padding: 10px;
+  width: fit-content;
+  /* background-color: beige; */
+}
+
+.header-logo img {
+  width: 70px;
+  height: auto;
+  float: left;
+  margin-right: 5px;
+}
+
+.header-logo h1 {
+  color: var(--main-dark);
+  width: 250px;
+  height: auto;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 5px;
+}
+
+/* -------------------------------------- */

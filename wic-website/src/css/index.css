@@ -1,0 +1,18 @@
+/* Logo Font */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+/* Text Font */
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+
+/* Colours  */
+:root {
+  --main-light: #8dd3df;
+  --main-dark: #152b2f;
+  --main-white: #ffffff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
