@@ -1,4 +1,3 @@
-import "../../css/Events.css";
 import Event from "./Event";
 
 const Events = () => {

@@ -12,7 +12,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="NavbarItems">
+      <nav className="Navbar">
         {/* Navbar Logo and Name */}
         <div className="navbar-logo">
           <img

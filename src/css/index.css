@@ -35,15 +35,3 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-
-.btn {
-  background-color: var(--main-light);
-  border-radius: 5px;
-  padding: 15px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  font-family: "Raleway", sans-serif;
-  transition: all 0.2s ease;
-}

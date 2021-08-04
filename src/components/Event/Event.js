@@ -22,7 +22,12 @@ const Event = () => {
                 <p>{event.description}</p>
               </div>
               <div className="event-details-register">
-                <a className="btn register" href={event.link} target="_blank">
+                <a
+                  className="btn register"
+                  href={event.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Register Here
                 </a>
               </div>

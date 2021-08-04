@@ -19,7 +19,7 @@ a {
   list-style: none;
 }
 
-.NavbarItems {
+.Navbar {
   text-align: center;
   color: var(--white);
   background-color: var(--main-light);
@@ -32,6 +32,8 @@ a {
   justify-content: left;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 
 /* WiC Logo --------------------------------- */
@@ -131,7 +133,7 @@ a {
   }
 
   /* Nav Menu---------------------------------- */
-  .NavbarItems {
+  .Navbar {
     padding: 0;
     background-color: var(--main-light);
   }
@@ -151,16 +153,15 @@ a {
     grid-template-columns: repeat(1, auto);
     width: 100%;
     background-color: var(--main-off-light);
-
     position: absolute;
     opacity: 0;
-    /* transition: all 0.5s ease; */
+    transition: all 0.2s ease;
   }
 
   .nav-menu.active {
     background-color: var(--main-off-light);
     opacity: 1;
-    /* transition: all 0.5s ease; */
+    transition: all 0.2s ease;
     z-index: 1;
   }
 

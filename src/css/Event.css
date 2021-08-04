@@ -1,5 +1,4 @@
 .Event {
-  /* background-color: bisque; */
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -44,20 +43,8 @@
 
 .event-details p {
   text-align: justify;
-  /* padding-right: 1000px; */
 }
 
 .event-details-register {
   margin-top: 50px;
-}
-
-.btn.register {
-  border: 5px solid var(--main-accent);
-  background-color: var(--white);
-  color: var(--main-accent);
-}
-
-.btn.register:hover {
-  background-color: var(--main-accent);
-  color: var(--white);
 }
