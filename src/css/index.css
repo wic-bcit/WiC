@@ -3,17 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 
 /* Text Font */
-/* font-family: 'Paytone One', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
-/* Colours  */
-
-/* Link Font */
 /* font-family: 'Raleway', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
 
 :root {
   --main-light: #8dd3df;
   --main-dark: #152b2f;
+  --main-darkish: #2a535a;
   --main-white: #ffffff;
   --main-yellow: #ffd419;
 }

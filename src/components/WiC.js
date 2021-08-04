@@ -1,11 +1,13 @@
 import "../css/WiC.css";
-import logo from "../img/logo/wic_logo_2021.png";
 
 const WiC = () => {
   return (
     <div className="WiC">
       <div className="WiC-Content">
-        <img src={logo} alt="wic logo"></img>
+        <img
+          src={process.env.PUBLIC_URL + "/img/logo/wic_logo_2021.png"}
+          alt="wic logo"
+        ></img>
         <div className="Text">
           <h1 className="wic-title">Empower,</h1>
           <h1 className="wic-title">Promote, & </h1>

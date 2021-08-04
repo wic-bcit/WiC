@@ -1,0 +1,41 @@
+.Event {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: brown;
+}
+
+.event-description {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  width: 100%;
+  max-width: 1000px;
+  background-color: bisque;
+  padding: 15px;
+  /* align-items: center; */
+}
+
+.poster {
+  width: 250px;
+  height: auto;
+}
+
+.event-details {
+  color: var(--main-dark);
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  /* width: 100%; */
+  width: 500px;
+}
+
+.event-details h2 {
+  color: var(--main-dark);
+  font-family: "Bungee", cursive;
+  text-align: left;
+  margin: 0;
+  line-height: 30px;
+}
+
+.event-details h3 {
+  color: var(--main-darkish);
+}

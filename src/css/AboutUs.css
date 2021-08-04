@@ -1,18 +1,10 @@
-/* Logo Font */
-/* font-family: 'Bungee', cursive; */
-@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
-
-/* Text Font */
-/* font-family: 'Paytone One', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
-
 .AboutUs {
   /* background-color: var(--white); */
   /* background-color: bisque; */
 }
 
 .about-details {
-  font-family: "Paytone One", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   line-height: 25px;
   text-align: justify;

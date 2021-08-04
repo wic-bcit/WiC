@@ -1,7 +1,6 @@
 import React from "react";
 import { MenuItems } from "./MenuItems";
 import "../../css/Navbar.css";
-import logo from "../../img/logo/wic_logo_2021.png";
 
 class Navbar extends React.Component {
   state = { clicked: false };
@@ -16,7 +15,10 @@ class Navbar extends React.Component {
       <nav className="NavbarItems">
         {/* Navbar Logo and Name */}
         <div className="navbar-logo">
-          <img src={logo} alt="wic-logo"></img>
+          <img
+            src={process.env.PUBLIC_URL + "/img/logo/wic_logo_2021.png"}
+            alt="wic-logo"
+          ></img>
           <h1>Women in Computing</h1>
         </div>
 
