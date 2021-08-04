@@ -1,6 +1,6 @@
 Hello!
 
-I (nicolej) have started the wic website creation using React. If you've taken the Intro to Web Dev course or have experience with basic HTML, CSS, and JS you should be good.
+I (njingco) have started the wic website creation using React. If you've taken the Intro to Web Dev course or have experience with basic HTML, CSS, and JS you should be good.
 
 # Before you start
 
