@@ -11,14 +11,14 @@
   /* background-color: bisque; */
 }
 
-.details {
+.about-details {
   font-family: "Paytone One", sans-serif;
   font-size: 20px;
   line-height: 25px;
   text-align: justify;
 }
 
-.detail-container {
+.about-detail-container {
   width: 70%;
   max-width: 1000px;
   margin: 0 auto;

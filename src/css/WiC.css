@@ -3,7 +3,7 @@
   background-color: var(--main-light);
 }
 
-.Content {
+.WiC-Content {
   margin: 0 auto;
   display: grid;
   width: fit-content;
@@ -12,12 +12,12 @@
   grid-gap: 20px;
 }
 
-.Content img {
+.WiC-Content img {
   width: 250px;
   height: auto;
 }
 
-.WiCTitle {
+.wic-title {
   font-family: "Bungee", cursive;
   color: var(--main-dark);
   font-size: 50px;
@@ -25,6 +25,6 @@
   line-height: 20px;
 }
 
-.WiCTitle.Y {
+.WiCTitle.y {
   color: var(--white);
 }
