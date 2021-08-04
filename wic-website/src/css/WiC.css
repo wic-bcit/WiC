@@ -1,0 +1,30 @@
+.WiC {
+  padding: 50px;
+  background-color: var(--main-light);
+}
+
+.Content {
+  margin: 0 auto;
+  display: grid;
+  width: fit-content;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.Content img {
+  width: 250px;
+  height: auto;
+}
+
+.WiCTitle {
+  font-family: "Bungee", cursive;
+  color: var(--main-dark);
+  font-size: 50px;
+  text-align: left;
+  line-height: 20px;
+}
+
+.WiCTitle.Y {
+  color: var(--white);
+}

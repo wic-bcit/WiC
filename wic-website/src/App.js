@@ -1,11 +1,13 @@
 import Navbar from "./components/Navbar/Navbar";
-// import Header from "./components/Header";
+import AboutUs from "./components/AboutUs";
+import WiC from "./components/WiC";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <Header /> */}
+      <WiC />
+      <AboutUs />
     </div>
   );
 }

@@ -1,18 +1,28 @@
 /* Logo Font */
+/* font-family: 'Bungee', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 
 /* Text Font */
+/* font-family: 'Paytone One', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
-
 /* Colours  */
 :root {
   --main-light: #8dd3df;
   --main-dark: #152b2f;
   --main-white: #ffffff;
+  --main-yellow: #ffd419;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--white);
+}
+
+.Title {
+  font-family: "Bungee", cursive;
+  color: var(--main-dark);
+  font-size: 50px;
+  text-align: center;
 }
