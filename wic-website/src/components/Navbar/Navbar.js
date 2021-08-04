@@ -8,6 +8,7 @@ class Navbar extends React.Component {
 
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
+    console.log(this.state.clicked);
   };
 
   render() {
@@ -19,7 +20,7 @@ class Navbar extends React.Component {
           <h1>Women in Computing</h1>
         </div>
 
-        {/* Menu Icom */}
+        {/* Menu Icon */}
         <div className="Menu">
           <div className="menu-icon" onClick={this.handleClick}>
             <i
@@ -28,7 +29,7 @@ class Navbar extends React.Component {
           </div>
 
           {/* Menu Items */}
-          <ul className={this.state.clicked ? "nav-menu.active" : "nav-menu"}>
+          <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
             {MenuItems.map((item, index) => {
               return (
                 <li key={index}>

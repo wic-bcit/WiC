@@ -10,7 +10,7 @@
 :root {
   --main-light: #8dd3df;
   --main-dark: #152b2f;
-  --main-off-light: #7ab5bf;
+  --main-off-light: #76c1ce;
   --white: #ffffff;
   --hover: #488994;
 }
@@ -19,6 +19,12 @@
 
 html {
   background-color: var(--main-light);
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
 }
 
 .NavbarItems {
@@ -34,6 +40,8 @@ html {
   align-items: center;
   justify-content: space-between;
 }
+
+/* WiC Logo --------------------------------- */
 
 .navbar-logo {
   text-align: left;
@@ -59,18 +67,11 @@ html {
   margin: 5px;
 }
 
-/* -------------------------------------- */
+/* Menu Items --------------------------------- */
 .Menu {
-  /* background-color: bisque; */
-  text-align: left;
   width: fit-content;
   margin: 0px;
   padding: 0px;
-}
-
-.fa-react {
-  margin-left: 0.5rem;
-  font-size: 1.6rem;
 }
 
 .menu-icon {
@@ -81,36 +82,27 @@ html {
 
 .nav-menu {
   display: grid;
+  justify-content: end;
   grid-template-columns: repeat(4, auto);
   grid-gap: 30px;
-  list-style: none;
-  text-align: center;
-  /* width: 50vw; */
-  /* margin-right: 2rem; */
-  justify-content: end;
-  font-size: 25px;
+  font-size: 20px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  /* background-color: beige; */
-}
 .nav-links {
   color: var(--white);
-  text-decoration: none;
-  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .nav-links:hover {
   cursor: pointer;
-  background-color: var(--main-hover);
   background-color: var(--hover);
   border-radius: 4px;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 
-.fa-bars {
+.fa-bars,
+.fa-times {
   color: var(--white);
 }
 
@@ -118,48 +110,14 @@ ul {
   display: none;
 }
 
-@media screen and (max-width: 992px) {
-  .NavbarItems {
-    position: relative;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    top: 80px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-
-  .nav-menu.active {
-    background: var(--main-off-light);
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-
-  .nav-links {
-    text-align: center;
-    width: 100%;
-    padding: 2rem;
-    display: table;
-  }
-
-  .nav-links:hover {
-    background: var(--hover);
-    border-radius: 0;
-  }
-
+@media screen and (max-width: 996px) {
   .navbar-logo {
     position: absolute;
     top: 0;
     left: 0;
   }
+
+  /* Nav Menu Icon------------------------------ */
 
   .menu-icon {
     display: flex;
@@ -175,7 +133,50 @@ ul {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-180%, 70%);
+    transform: translate(-110%, 70%);
     font-size: 2.2rem;
+  }
+
+  /* Nav Menu---------------------------------- */
+  .NavbarItems {
+    padding: 0;
+  }
+
+  .Menu {
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-menu {
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 100px;
+    justify-content: center;
+    height: fit-content;
+    grid-template-columns: repeat(1, auto);
+    width: 100%;
+    background-color: var(--main-off-light);
+
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background-color: var(--main-off-light);
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex: 1;
+  }
+
+  .nav-links:hover {
+    background: var(--hover);
+    border-radius: 0;
   }
 }
