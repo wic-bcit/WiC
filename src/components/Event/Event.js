@@ -7,7 +7,7 @@ const Event = () => {
     <div className="Event">
       {EventList.map((event, index) => {
         return (
-          <div className="event-description">
+          <div className="event-description" key={index}>
             <ModalImage
               small={process.env.PUBLIC_URL + event.img}
               large={process.env.PUBLIC_URL + event.img}
