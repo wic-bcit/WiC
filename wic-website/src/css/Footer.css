@@ -1,0 +1,17 @@
+.Footer {
+  text-align: left;
+  padding: 20px;
+  background-color: var(--main-light);
+}
+
+.social-container {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.socials {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--white);
+}
