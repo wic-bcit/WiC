@@ -9,7 +9,7 @@
 :root {
   --main-light: #8dd3df;
   --main-dark: #152b2f;
-  --main-darkish: #2a535a;
+  --main-accent: #548da3;
   --main-white: #ffffff;
   --main-yellow: #ffd419;
 }
@@ -26,4 +26,24 @@ body {
   color: var(--main-dark);
   font-size: 50px;
   text-align: center;
+  margin: 0px;
+}
+
+.Section {
+  background-color: var(--white);
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  background-color: var(--main-light);
+  border-radius: 5px;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  font-family: "Raleway", sans-serif;
+  transition: all 0.2s ease;
 }

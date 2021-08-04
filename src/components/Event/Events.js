@@ -6,9 +6,7 @@ const Events = () => {
     <div className="Events">
       <h1 className="Title">Events</h1>
       <div className="event-container">
-        <div className="event-2021">
-          <Event />
-        </div>
+        <Event />
       </div>
     </div>
   );

@@ -1,31 +1,32 @@
 .Event {
+  /* background-color: bisque; */
   width: fit-content;
   margin: 0 auto;
-  background-color: brown;
+  text-align: center;
+  padding: 15px;
 }
 
 .event-description {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-gap: 10px;
+  grid-gap: 20px;
   width: 100%;
-  max-width: 1000px;
-  background-color: bisque;
-  padding: 15px;
-  /* align-items: center; */
+  max-width: 800px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .poster {
   width: 250px;
   height: auto;
+  border-radius: 10px;
 }
 
 .event-details {
   color: var(--main-dark);
   font-family: "Raleway", sans-serif;
   text-align: left;
-  /* width: 100%; */
-  width: 500px;
+  width: 100%;
 }
 
 .event-details h2 {
@@ -37,5 +38,26 @@
 }
 
 .event-details h3 {
-  color: var(--main-darkish);
+  color: var(--main-accent);
+  margin: 0;
+}
+
+.event-details p {
+  text-align: justify;
+  /* padding-right: 1000px; */
+}
+
+.event-details-register {
+  margin-top: 50px;
+}
+
+.btn.register {
+  border: 5px solid var(--main-accent);
+  background-color: var(--white);
+  color: var(--main-accent);
+}
+
+.btn.register:hover {
+  background-color: var(--main-accent);
+  color: var(--white);
 }

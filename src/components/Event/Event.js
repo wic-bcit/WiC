@@ -16,20 +16,22 @@ const Event = () => {
             />
 
             <div className="event-details">
-              <h2>{event.title}</h2>
-              <h3>{event.date + "  |  " + event.time}</h3>
-              <p>{event.description}</p>
-              <a href={event.link}>Register Here</a>
+              <div className="event-details-text">
+                <h2>{event.title}</h2>
+                <h3>{event.date + "  |  " + event.time}</h3>
+                <p>{event.description}</p>
+              </div>
+              <div className="event-details-register">
+                <a className="btn register" href={event.link} target="_blank">
+                  Register Here
+                </a>
+              </div>
             </div>
           </div>
         );
       })}
     </div>
   );
-};
-
-const closeLightbox = () => {
-  this.state.open = true;
 };
 
 export default Event;
