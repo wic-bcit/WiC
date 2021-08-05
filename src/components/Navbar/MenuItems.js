@@ -32,7 +32,7 @@ export const MenuItems = [
     url: "/",
     cName: "nav-links",
     id: "Join",
-    offset: -20,
+    offset: -50,
   },
 ];
 
