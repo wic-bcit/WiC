@@ -14,9 +14,18 @@ I (njingco) have started the wic website creation using React. If you've taken t
 
 Note: Ignore the other files not mentioned. Also not sure about how I did the file structure. This is my first time working with React so I'm not sure what the conventions of folder structure.
 
-public: - This file contains the main index.html file. You don't have to use this.
+    public:
+        - main index.html file
+        - img:
+            - Contains all images
 
-src: - components: - Contains the Javascript Files for each section (Navbar, About Us, Events, etc.) - The js files have been created so feel free to change it if you're working on it. - css: - Contains all the css files used by each JS . - img: - Contains all images, not including the web icon
+    src:
+    - components:
+      - Contains the Javascript Files for each section (Navbar, About Us, Events, etc.)
+      - The js files have been created so feel free to change it if you're working on it.
+
+    - css:
+        - Contains all the css files used by each JS .
 
     - App.js:
         - Main JS where all the JS are called to be rendered
