@@ -8,7 +8,6 @@ class Navbar extends React.Component {
 
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
-    console.log(this.state.clicked);
   };
 
   goHome = () => {
@@ -44,6 +43,7 @@ class Navbar extends React.Component {
                     smooth={true}
                     offset={-50}
                     duration={1000}
+                    onClick={this.handleClick}
                   >
                     {item.title}
                   </Link>

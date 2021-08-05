@@ -14,7 +14,7 @@ export const EventList = [
     link: "https://forms.gle/MTS6jfSS22MyFQP48",
   },
   {
-    title: "Hack the Break",
+    title: "Hack the Break 2021",
     date: "March 13-14, 2021",
     time: "9:30 am",
     location: "Zoom",
