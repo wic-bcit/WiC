@@ -41,7 +41,7 @@ class Navbar extends React.Component {
                     className={item.cName}
                     to={item.id}
                     smooth={true}
-                    offset={-50}
+                    offset={item.offset}
                     duration={1000}
                     onClick={this.handleClick}
                   >

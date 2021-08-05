@@ -25,7 +25,7 @@ class Event extends React.Component {
                 </div>
                 <div className="event-details-register">
                   <a
-                    className="btn register"
+                    className={event.isActive ? "btn register" : "btn empty"}
                     href={event.link}
                     target="_blank"
                     rel="noreferrer"

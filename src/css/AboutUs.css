@@ -1,6 +1,6 @@
 .about-details {
   font-family: "Raleway", sans-serif;
-  font-size: var(--context-details);
+  font-size: var(--font-size-m);
   line-height: 25px;
   text-align: justify;
 }
@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 500px) {
   .about-details {
-    font-size: var(--context-details-mobile);
+    font-size: var(--font-size-s);
     line-height: 20px;
     text-align: justify;
   }

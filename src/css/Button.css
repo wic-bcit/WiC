@@ -4,7 +4,8 @@
   border-radius: 5px;
   background-color: var(--white);
   color: var(--main-accent);
-  padding: 15px;
+  padding: 10px;
+  font-size: var(--font-size-m);
   text-decoration: none;
   box-shadow: -1px 2px 4px var(--shadow);
 }
@@ -15,7 +16,15 @@
   color: var(--white);
 }
 
-/* .btn.main {
-  border: 5px solid var(--main-dark);
-  color: var(--main-dark); */
-/* } */
+.btn.empty {
+  display: none;
+}
+
+.page-link {
+  font-family: "Raleway", sans-serif;
+  color: var(--main-accent);
+  font-size: var(--font-size-l);
+  border-bottom: 3px solid var(--main-accent);
+  line-height: 1px;
+  padding-bottom: 0px;
+}

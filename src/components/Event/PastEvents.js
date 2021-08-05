@@ -1,5 +1,5 @@
 import "../../css/Event.css";
-import Event from "./Event";
+import Event from "./EventInfo";
 import SimpleNavbar from "../Navbar/SimpleNavbar";
 
 import React from "react";

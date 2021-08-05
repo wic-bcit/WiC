@@ -42,7 +42,7 @@
 
 .event-details p {
   text-align: justify;
-  font-size: var(--context-details);
+  font-size: var(--font-size-m);
 }
 
 .event-details-register {
@@ -54,15 +54,6 @@
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 50px;
-}
-
-.page-link {
-  font-family: "Raleway", sans-serif;
-  color: var(--main-accent);
-  font-size: var(--context-title);
-  border-bottom: 3px solid var(--main-accent);
-  line-height: 1px;
-  padding-bottom: 0px;
 }
 
 @media screen and (max-width: 996px) {
@@ -83,7 +74,7 @@
   }
 
   .event-details p {
-    text-align: justify;
-    font-size: var(--context-details-mobile);
+    text-align: left;
+    font-size: var(--font-size-s);
   }
 }
