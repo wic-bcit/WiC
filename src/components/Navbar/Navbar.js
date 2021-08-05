@@ -11,19 +11,22 @@ class Navbar extends React.Component {
     console.log(this.state.clicked);
   };
 
+  goHome = () => {
+    window.open("/", "_self");
+  };
+
   render() {
     return (
       <nav className="Navbar">
-        {/* Navbar Logo and Name */}
         <div className="navbar-logo">
           <img
             src={process.env.PUBLIC_URL + "/img/logo/wic_logo_2021.png"}
             alt="wic-logo"
+            onClick={this.goHome}
           ></img>
-          <h1>Women in Computing</h1>
+          <h1 onClick={this.goHome}>Women in Computing</h1>
         </div>
 
-        {/* Menu Icon */}
         <div className="Menu">
           <div className="menu-icon" onClick={this.handleClick}>
             <i
@@ -31,7 +34,6 @@ class Navbar extends React.Component {
             ></i>
           </div>
 
-          {/* Menu Items */}
           <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
             {MenuItems.map((item, index) => {
               return (
@@ -51,6 +53,7 @@ class Navbar extends React.Component {
           </ul>
         </div>
       </nav>
+      // </Router>
     );
   }
 }

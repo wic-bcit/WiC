@@ -15,6 +15,9 @@
 .WiC-Content img {
   max-width: 250px;
   height: auto;
+  /* Shadow Effect */
+  /* box-shadow: 0px 2px 10px var(--shadow);
+  border-radius: 20px; */
 }
 
 .wic-title {

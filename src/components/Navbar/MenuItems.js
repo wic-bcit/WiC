@@ -1,31 +1,31 @@
 export const MenuItems = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     cName: "nav-links",
     id: "WiC",
   },
   {
     title: "About Us",
-    url: "#",
+    url: "/",
     cName: "nav-links",
     id: "About",
   },
   {
     title: "Events",
-    url: "#",
+    url: "/",
     cName: "nav-links",
     id: "Event",
   },
   {
     title: "Team",
-    url: "#",
+    url: "/",
     cName: "nav-links",
     id: "Team",
   },
   {
     title: "Contact Us",
-    url: "#",
+    url: "/",
     cName: "nav-links",
     id: "Contact",
   },

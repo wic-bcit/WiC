@@ -17,6 +17,8 @@
   --context-title: 20px;
   --context-details: 18px;
   --context-details-mobile: 15px;
+
+  --shadow: rgba(59, 59, 75, 0.616);
 }
 
 html,

@@ -1,22 +1,14 @@
-import Navbar from "./components/Navbar/Navbar";
-import WiC from "./components/WiC";
-import AboutUs from "./components/AboutUs";
-import Events from "./components/Event/Events";
-import Team from "./components/Team";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Home from "./components/Home";
+import PastEvents from "./components/Event/PastEvents";
+
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <WiC />
-      <AboutUs />
-      <Events />
-      <Team />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <Route exact path="/" component={Home}></Route>
+      <Route exact path="/past-events" component={PastEvents}></Route>
+    </Router>
   );
 }
 
