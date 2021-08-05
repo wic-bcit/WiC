@@ -20,18 +20,18 @@ Note: Ignore the other files not mentioned. Also not sure about how I did the fi
             - Contains all images
 
     src:
-    - components:
-      - Contains the Javascript Files for each section (Navbar, About Us, Events, etc.)
-      - The js files have been created so feel free to change it if you're working on it.
+        - components:
+          - Contains the Javascript Files for each section (Navbar, About Us, Events, etc.)
+          - The js files have been created so feel free to change it if you're working on it.
 
-    - css:
-        - Contains all the css files used by each JS .
+        - css:
+            - Contains all the css files used by each JS .
 
-    - App.js:
-        - Main JS where all the JS are called to be rendered
+        - App.js:
+            - Main JS where all the JS are called to be rendered
 
-    - index.js:
-        - Redeners App.js
+        - index.js:
+            - Redeners App.js
 
 # Naming Convention
 
