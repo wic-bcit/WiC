@@ -54,7 +54,7 @@ a {
 }
 
 .navbar-logo img:hover,
-h1:hover {
+.navbar-logo h1 {
   cursor: pointer;
 }
 
@@ -129,8 +129,6 @@ h1:hover {
     position: absolute;
     top: 0;
     right: 0;
-    /* <>, ^ */
-
     transform: translate(-70%, 70%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -166,7 +164,7 @@ h1:hover {
     width: 100%;
     background-color: var(--main-off-light);
     position: absolute;
-    left: 200%;
+    left: -200%;
     transition: all 0.5s ease;
   }
 
