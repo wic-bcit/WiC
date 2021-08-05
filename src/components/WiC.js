@@ -2,7 +2,7 @@ import "../css/WiC.css";
 
 const WiC = () => {
   return (
-    <div className="WiC">
+    <div className="WiC" id="WiC">
       <div className="WiC-Content">
         <img
           src={process.env.PUBLIC_URL + "/img/logo/wic_logo_2021.png"}

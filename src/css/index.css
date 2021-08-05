@@ -12,6 +12,11 @@
   --main-accent: #548da3;
   --main-white: #ffffff;
   --main-yellow: #ffd419;
+
+  --section-title: 40px;
+  --context-title: 20px;
+  --context-details: 18px;
+  --context-details-mobile: 15px;
 }
 
 html,
@@ -24,7 +29,7 @@ body {
 .Title {
   font-family: "Bungee", cursive;
   color: var(--main-dark);
-  font-size: 50px;
+  font-size: var(--section-title);
   text-align: center;
   margin: 0px;
 }

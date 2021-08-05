@@ -2,7 +2,7 @@ import Event from "./Event";
 
 const Events = () => {
   return (
-    <div className="Events">
+    <div className="Events" id="Event">
       <h1 className="Title">Events</h1>
       <div className="event-container">
         <Event />
