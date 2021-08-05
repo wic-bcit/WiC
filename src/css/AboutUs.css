@@ -10,3 +10,11 @@
   max-width: 1000px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 500px) {
+  .about-details {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+  }
+}

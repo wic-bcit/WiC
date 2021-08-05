@@ -7,7 +7,7 @@ I (njingco) have started the wic website creation using React. If you've taken t
 1. Have nodejs instaled [https://nodejs.org/en/]
 2. Create a branch for yourself
 3. View the TODO file to see what else needs to done.
-4. Inform the group chat (WhatsApp) if you will be working on a section
+4. Inform the group chat (WhatsApp/Discord) if you will be working on a section
 5. Message the WhastsApp or the Discrod chat if you have any questions
 
 # Data Strucure

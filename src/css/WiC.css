@@ -13,7 +13,7 @@
 }
 
 .WiC-Content img {
-  width: 250px;
+  max-width: 250px;
   height: auto;
 }
 
@@ -27,4 +27,38 @@
 
 .wic-title.y {
   color: var(--white);
+}
+
+@media screen and (max-width: 996px) {
+  .WiC {
+    padding: 0px;
+    background-color: var(--main-light);
+    padding-bottom: 30px;
+  }
+  .WiC-Content img {
+    /* display: none; */
+    max-width: 200px;
+  }
+
+  .wic-title {
+    font-size: 30px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .WiC {
+    padding: 20px;
+    background-color: var(--main-light);
+  }
+
+  .WiC-Content img {
+    display: none;
+    /* max-width: 100px; */
+  }
+
+  .wic-title {
+    font-size: 40px;
+    line-height: 20px;
+  }
 }
