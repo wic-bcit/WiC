@@ -7,16 +7,16 @@
 
 .event-description {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
-  width: 100%;
+  /* width: 100%; */
   max-width: 800px;
   margin: 0;
   margin-bottom: 20px;
 }
 
 .poster {
-  width: 250px;
+  /* width: 250px; */
   height: auto;
   border-radius: 10px;
 }
@@ -47,17 +47,22 @@
 
 .event-details-register {
   margin-top: 50px;
+  width: fit-content;
+}
+
+@media screen and (max-width: 996px) {
+  .event-description {
+    margin-bottom: 70px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .event-description {
-    margin-bottom: 70px;
-  }
-  .event-details p {
-    text-align: left;
+    grid-template-columns: repeat(1, auto);
   }
 
   .event-details-register {
+    margin: 0 auto;
     margin-top: 30px;
   }
 }
