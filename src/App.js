@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <Route exact path="/" component={Home}></Route>
+      <Route exact path="/wic" component={Home}></Route>
       <Route exact path="/past-events" component={PastEvents}></Route>
       <Route exact path="/past-execs" component={PastExecs}></Route>
     </Router>
