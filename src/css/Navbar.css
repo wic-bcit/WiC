@@ -186,3 +186,9 @@ a {
     border-radius: 0;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .nav-links {
+    font-size: var(--font-size-xl);
+  }
+}
