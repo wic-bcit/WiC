@@ -13,7 +13,7 @@ const PastEvents = () => {
       <div className="event-container">
         <Event />
         <div className="btn-container">
-          <a className="page-link" href="/">
+          <a className="page-link" href="/WiC">
             ◂ Return Home
           </a>
         </div>
