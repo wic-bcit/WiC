@@ -12,7 +12,7 @@ class Events extends React.Component {
           <div className="event-container">
             <Event preview={this.props.preview} />
             <div className="btn-container">
-              <a className="page-link" href="/past-events">
+              <a className="page-link" href="/WiC/past-events">
                 View Past Events ▸
               </a>
             </div>
