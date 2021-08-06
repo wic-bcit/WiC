@@ -8,8 +8,8 @@ function App() {
   return (
     <Router>
       <Route exact path="/WiC" component={Home}></Route>
-      <Route exact path="/past-events" component={PastEvents}></Route>
-      <Route exact path="/past-execs" component={PastExecs}></Route>
+      <Route exact path="/WiC/past-events" component={PastEvents}></Route>
+      <Route exact path="/WiC/past-execs" component={PastExecs}></Route>
     </Router>
   );
 }
