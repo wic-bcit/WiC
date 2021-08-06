@@ -20,13 +20,13 @@ export const MenuItems = [
     id: "Event",
     offset: -160,
   },
-  {
-    title: "Team",
-    url: "/",
-    cName: "nav-links",
-    id: "Team",
-    offset: -60,
-  },
+  // {
+  //   title: "Team",
+  //   url: "/",
+  //   cName: "nav-links",
+  //   id: "Team",
+  //   offset: -60,
+  // },
   {
     title: "Join Us",
     url: "/",
