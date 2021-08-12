@@ -49,3 +49,12 @@ Note: Ignore the other files not mentioned. Also not sure about how I did the fi
 
 1. `ctrl + c`
 2. `y`
+
+# Update Live
+
+1. Update main branch
+   - `git add .`
+   - `git commit -m "comment"`
+   - `git push`
+2. Deploy live branch
+   - `npm run deploy`

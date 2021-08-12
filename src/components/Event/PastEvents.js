@@ -4,6 +4,7 @@ import SimpleNavbar from "../Navbar/SimpleNavbar";
 import Footer from "../Footer";
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PastEvents = () => {
   return (
@@ -13,9 +14,13 @@ const PastEvents = () => {
       <div className="event-container">
         <Event />
         <div className="btn-container">
-          <a className="page-link" href="/">
+          {/* <a className="page-link" href="/">
             ◂ Return Home
-          </a>
+          </a> */}
+
+          <Link className={"page-link"} to="/">
+            View Past Events ▸
+          </Link>
         </div>
       </div>
       <Footer />

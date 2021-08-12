@@ -1,5 +1,6 @@
 import React from "react";
 import Event from "./EventInfo";
+import { Link } from "react-router-dom";
 
 import "../../css/Event.css";
 
@@ -12,9 +13,13 @@ class Events extends React.Component {
           <div className="event-container">
             <Event preview={this.props.preview} />
             <div className="btn-container">
-              <a className="page-link" href="/past-events">
+              {/* <a className="page-link" href="/past-events">
                 View Past Events ▸
-              </a>
+              </a> */}
+
+              <Link className={"page-link"} to="/past-events">
+                View Past Events ▸
+              </Link>
             </div>
           </div>
         </div>
