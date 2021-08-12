@@ -1,17 +1,15 @@
 import Home from "./components/Home";
 import PastEvents from "./components/Event/PastEvents";
-import { Switch, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route exact path="/past-events">
-        <PastEvents />
-      </Route>
-    </Switch>
+    <HashRouter basename="/">
+      <ScrollToTop />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/past-events" component={PastEvents} />
+    </HashRouter>
   );
 }
 
