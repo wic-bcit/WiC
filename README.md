@@ -41,8 +41,9 @@ Note: Ignore the other files not mentioned. Also not sure about how I did the fi
 
 # Starting React
 
-1. `npm start` this starts up the server and automatically open the page on your browser.
-2. `http://localhost:3000`
+1. `npm i` this will install the packages needed to build react
+2. `npm start` this starts up the server and automatically open the page on your browser.
+3. `http://localhost:3000`
 
 # Closing React server
 
