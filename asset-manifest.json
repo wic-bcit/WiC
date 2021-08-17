@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/WiC/static/css/main.0c1f2f85.chunk.css",
-    "main.js": "/WiC/static/js/main.a1b1b20f.chunk.js",
-    "main.js.map": "/WiC/static/js/main.a1b1b20f.chunk.js.map",
+    "main.js": "/WiC/static/js/main.4cabb82b.chunk.js",
+    "main.js.map": "/WiC/static/js/main.4cabb82b.chunk.js.map",
     "runtime-main.js": "/WiC/static/js/runtime-main.64aa5c4d.js",
     "runtime-main.js.map": "/WiC/static/js/runtime-main.64aa5c4d.js.map",
     "static/js/2.685bc234.chunk.js": "/WiC/static/js/2.685bc234.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.64aa5c4d.js",
     "static/js/2.685bc234.chunk.js",
     "static/css/main.0c1f2f85.chunk.css",
-    "static/js/main.a1b1b20f.chunk.js"
+    "static/js/main.4cabb82b.chunk.js"
   ]
 }
