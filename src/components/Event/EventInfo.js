@@ -9,11 +9,11 @@ class Event extends React.Component {
       <div className="Event">
         {EventList.slice(0, this.props.preview).map((event, index) => {
           return (
-            <div className="event-description" key={index}>
+            <div className="event-info-container" key={index}>
               <ModalImage
                 small={process.env.PUBLIC_URL + event.img}
                 large={process.env.PUBLIC_URL + event.img}
-                className="poster"
+                className="event-poster"
                 alt={event.title}
               />
 

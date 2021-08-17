@@ -4,7 +4,7 @@ export const MenuItems = [
     url: "/",
     cName: "nav-links",
     id: "WiC",
-    offset: -50,
+    offset: -55,
   },
   {
     title: "About Us",
@@ -14,11 +14,11 @@ export const MenuItems = [
     offset: -55,
   },
   {
-    title: "Events",
+    title: "Events ▾",
     url: "/",
     cName: "nav-links",
     id: "Event",
-    offset: -160,
+    offset: -55,
   },
   // {
   //   title: "Team",
@@ -32,7 +32,7 @@ export const MenuItems = [
     url: "/",
     cName: "nav-links",
     id: "Join",
-    offset: -50,
+    offset: -55,
   },
 ];
 

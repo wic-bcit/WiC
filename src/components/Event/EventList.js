@@ -82,7 +82,7 @@ export const EventList = [
     location: "Microsoft Teams",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-    img: "/img/2020/f/JOB_EXE_Poster.jpg",
+    img: "/img/2020/f/Job_EXE_Poster.jpg",
     link: "#",
     isActive: false,
   },

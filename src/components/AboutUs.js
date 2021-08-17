@@ -5,7 +5,7 @@ const AboutUs = () => {
     <div className="Section" id="About">
       <h1 className="Title">About Us</h1>
 
-      <div className="about-detail-container">
+      <div className="AboutUs">
         <p className="about-details">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
