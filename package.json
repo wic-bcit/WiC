@@ -2,6 +2,7 @@
   "name": "WiC",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://wic-bcit.github.io/WiC",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -13,8 +14,7 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.3",
-    "web-vitals": "^1.0.1",
-    "homepage": "https://wic-bcit.github.io/WiC"
+    "web-vitals": "^1.0.1"    
   },
   "scripts": {
     "predeploy": "npm run build",

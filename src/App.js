@@ -7,7 +7,7 @@ function App() {
   return (
     <HashRouter basename="/">
       <ScrollToTop />
-      <Route exact path="/WiC" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route exact path="/past-events" component={PastEvents} />
     </HashRouter>
   );
