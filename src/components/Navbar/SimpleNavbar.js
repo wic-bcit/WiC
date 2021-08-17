@@ -3,7 +3,7 @@ import "../../css/Navbar.css";
 
 class SimpleNavbar extends React.Component {
   goHome = () => {
-    window.open("/", "_self");
+    window.open("/WiC", "_self");
   };
 
   render() {
@@ -19,7 +19,7 @@ class SimpleNavbar extends React.Component {
         </div>
 
         <div className="home-link">
-          <a className="nav-links simple" href="/">
+          <a className="nav-links simple" href="/WiC">
             Home
           </a>
         </div>
