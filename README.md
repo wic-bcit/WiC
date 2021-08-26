@@ -52,9 +52,6 @@ Note: Ignore the other files not mentioned. Also not sure about how I did the fi
 
 # Update Live
 
-1. Update main branch
-   - `git add .`
-   - `git commit -m "comment"`
-   - `git push`
+1. Be logged in to the wic git hub account
 2. Deploy live branch
    - `npm run deploy`

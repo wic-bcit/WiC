@@ -15,7 +15,7 @@ const PastEvents = () => {
         <Event />
         <div className="btn-container">
           <Link className={"page-link"} to="/">
-            ◂ Go Home
+            ◂ Return Home
           </Link>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import "../css/AboutUs.css";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -16,6 +17,9 @@ const AboutUs = () => {
           amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua.
         </p>
+        <Link className={"page-link"} to="/past-execs">
+          Executive Team ▸
+        </Link>
       </div>
     </div>
   );

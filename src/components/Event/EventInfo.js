@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css/Event.css";
 import { EventList } from "./EventList";
+import { Text } from "react-native";
 import ModalImage from "react-modal-image";
 
 class Event extends React.Component {
@@ -21,17 +22,35 @@ class Event extends React.Component {
                 <div className="event-details-text">
                   <h2>{event.title}</h2>
                   <h3>{event.date + "  |  " + event.time}</h3>
-                  <p>{event.description}</p>
+                  <div className="event-details-desc">{event.description}</div>
+                  <br />
+                  <br />
+                  <i>{event.note}</i>
                 </div>
                 <div className="event-details-register">
                   <a
                     className={event.isActive ? "btn register" : "btn empty"}
-                    href={event.link}
+                    href={event.register}
                     target="_blank"
                     rel="noreferrer"
                   >
                     Register Here
                   </a>
+
+                  {event.link.map((item, key) => {
+                    return (
+                      <a
+                        // className={event.hasLink ? "btn register" : "btn empty"}
+                        className={"btn register"}
+                        href={item.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        key={key}
+                      >
+                        {item.name}
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             </div>

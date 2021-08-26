@@ -14,7 +14,7 @@ class Team extends React.Component {
             })} */}
           </div>
           <a className="page-link" href="/past-execs">
-            View Past Executive Team ▸
+            Executive Team ▸
           </a>
         </div>
       </div>
