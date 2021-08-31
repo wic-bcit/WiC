@@ -1,6 +1,6 @@
 Hello!
 
-I (njingco) have started the wic website creation using React. If you've taken the Intro to Web Dev course or have experience with basic HTML, CSS, and JS you should be good.
+This website is created using React. If you've taken the Intro to Web Dev course or have experience with basic HTML, CSS, and JS you should be good.
 
 # Before you start
 
@@ -52,6 +52,8 @@ Note: Ignore the other files not mentioned. Also not sure about how I did the fi
 
 # Update Live
 
-1. Be logged in to the wic git hub account
+1. Be logged in to the wic github account
 2. Deploy live branch
    - `npm run deploy`
+
+Note: The text css in Events will display differently for the deployed and testing due to <Text> usign different classnames

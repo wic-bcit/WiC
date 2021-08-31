@@ -8,7 +8,7 @@
 .event-info-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 20px;
+  grid-gap: 30px;
   max-width: 800px;
   margin: 0;
   padding-bottom: 20px;
@@ -41,7 +41,8 @@
   margin-bottom: 10px;
 }
 
-.event-details-desc {
+/* .event-details-desc { */
+.css-901oao {
   text-align: justify;
   color: var(--main-dark);
   font-family: "Raleway", sans-serif;
@@ -57,7 +58,6 @@
 .btn-container {
   width: fit-content;
   margin: 0 auto;
-  /* margin-bottom: 50px; */
 }
 
 @media screen and (max-width: 996px) {
@@ -75,15 +75,17 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .event-info-container {
     grid-template-columns: repeat(1, auto);
   }
 
-  .css-text-901oao {
+  /* .event-details-desc { */
+  .css-901oao {
     text-align: left;
     font-size: var(--font-size-s);
   }
+
   .event-details-register {
     margin: 0 auto;
   }
