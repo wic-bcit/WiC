@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/WiC/static/css/main.309f738e.chunk.css",
+    "main.css": "/WiC/static/css/main.b4cc8e39.chunk.css",
     "main.js": "/WiC/static/js/main.52318351.chunk.js",
     "main.js.map": "/WiC/static/js/main.52318351.chunk.js.map",
     "runtime-main.js": "/WiC/static/js/runtime-main.b381f390.js",
@@ -10,13 +10,13 @@
     "static/js/3.9b606216.chunk.js": "/WiC/static/js/3.9b606216.chunk.js",
     "static/js/3.9b606216.chunk.js.map": "/WiC/static/js/3.9b606216.chunk.js.map",
     "index.html": "/WiC/index.html",
-    "static/css/main.309f738e.chunk.css.map": "/WiC/static/css/main.309f738e.chunk.css.map",
+    "static/css/main.b4cc8e39.chunk.css.map": "/WiC/static/css/main.b4cc8e39.chunk.css.map",
     "static/js/2.663b509e.chunk.js.LICENSE.txt": "/WiC/static/js/2.663b509e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b381f390.js",
     "static/js/2.663b509e.chunk.js",
-    "static/css/main.309f738e.chunk.css",
+    "static/css/main.b4cc8e39.chunk.css",
     "static/js/main.52318351.chunk.js"
   ]
 }
