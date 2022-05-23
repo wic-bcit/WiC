@@ -1,50 +1,46 @@
-Hello!
+# Getting Started with Create React App
 
-I (njingco) have started the wic website creation using React. If you've taken the Intro to Web Dev course or have experience with basic HTML, CSS, and JS you should be good.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Before you start
+## Available Scripts
 
-1. Have nodejs instaled [https://nodejs.org/en/]
-2. Create a branch for yourself
-3. View the TODO file to see what else needs to done.
-4. Inform the group chat (WhatsApp/Discord) if you will be working on a section
-5. Message the WhastsApp or the Discrod chat if you have any questions
+In the project directory, you can run:
 
-# Data Strucure
+### `npm start`
 
-Note: Ignore the other files not mentioned. Also not sure about how I did the file structure. This is my first time working with React so I'm not sure what the conventions of folder structure.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-    public:
-        - main index.html file
-        - img:
-            - Contains all images
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-    src:
-        - components:
-          - Contains the Javascript Files for each section (Navbar, About Us, Events, etc.)
-          - The js files have been created so feel free to change it if you're working on it.
+### `npm test`
 
-        - css:
-            - Contains all the css files used by each JS .
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-        - App.js:
-            - Main JS where all the JS are called to be rendered
+### `npm run build`
 
-        - index.js:
-            - Redeners App.js
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-# Naming Convention
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- I don't really have one set up but I've made my main divs Camel Case, and childern lowercase with '-' for a space.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- You do not have to follow them BUT try to keep it unique as it can cause issue with the css if it has the same name if it exist.
+### `npm run eject`
 
-# Starting React
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-1. `npm start` this starts up the server and automatically open the page on your browser.
-2. `http://localhost:3000`
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# Closing React server
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-1. `ctrl + c`
-2. `y`
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
