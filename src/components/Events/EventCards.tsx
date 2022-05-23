@@ -20,14 +20,12 @@ export default function EventCards(props: any) {
     getEvents();
   }, []);
 
-  let start: number =
-    Number(props.preview) == 0 ? 0 : events.length - Number(props.preview);
-  console.log("Start " + start);
-  console.log("Event " + events.length);
+  let end: number =
+    Number(props.preview) > 0 ? Number(props.preview) : events.length;
 
   return (
     <div className="Event">
-      {events.slice(start, events.length).map((e: Event) => {
+      {events.slice(0, end).map((e: Event) => {
         return (
           <div className="event-description" key={e.id}>
             <img src={e.img} alt={e.title} className="poster"></img>
