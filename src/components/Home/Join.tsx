@@ -1,3 +1,4 @@
+import React from "react";
 import "./Join.css";
 
 function Join() {
