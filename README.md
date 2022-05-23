@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+Hello!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This website is created using React. If you've taken the Intro to Web Dev course or have experience with basic HTML, CSS, and JS you should be good.
 
-## Available Scripts
+# Before you start
 
-In the project directory, you can run:
+1. Have nodejs instaled [https://nodejs.org/en/]
+2. Create a branch for yourself
+3. View the TODO file to see what else needs to done.
+4. Inform the group chat (WhatsApp/Discord) if you will be working on a section
+5. Message the WhastsApp or the Discrod chat if you have any questions
 
-### `npm start`
+## Data Strucure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Note: Ignore the other files not mentioned. Also not sure about how I did the file structure. This is my first time working with React so I'm not sure what the conventions of folder structure.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    public:
+        - main index.html file
 
-### `npm test`
+    src:
+        - components:
+          - Contains folders of based on page or reusable components. Each folder contains Typescript Files for each section (Navbar, About Us, Events, etc.) and CSS file.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        - App.tsx:
+            - Main TS where all the TS are called to be rendered
 
-### `npm run build`
+        - index.tsx:
+            - Redenders App.tsx
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Updating Firebase
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Login to [Firebase](https://console.firebase.google.com/u/2/project/wicwebiste/firestore/data/~2Fevents~2FMB3A1VS3flmJS7pts3kJ) using the WiC gmail account.
+2. Add Event poster image to [Firebase Storage](https://console.firebase.google.com/u/2/project/wicwebiste/storage/wicwebiste.appspot.com/files). Upload image to `/<event year>` then use image link for `img` field:
+   ![posterLink](./README_Img/PosterLink.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Add the new events information using the following fields:
 
-### `npm run eject`
+```
+- title:string = <Events>
+- description:string = <Event Description>
+- img:string = <Image from storage link>
+- isActive:boolean = <true/false>
+- register:string = <Registration Link>
+- date:timestamp = <Add date field, time field can be left empty>
+- time:string = <Time of event>
+- venue:string = <Platform using (Discord, Zoom, etc.)>
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Usage
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Starting React
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. `npm install` this will install the packages needed to build react
+2. `npm start` this starts up the server and automatically open the page on your browser.
+3. `http://localhost:3000`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Closing React server
 
-## Learn More
+1. `ctrl + c`
+2. `y`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Update Live
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Be logged in to the wic github account
+2. Deploy live branch
+   - `npm run deploy`
+
+Note: The text css in Events will display differently for the deployed and testing due to <Text> usign different classnames
+
+# TODO
+
+Things to do for the website
+_(Feel free to add more things here)_
+
+- [x] Change from JS to Typescript
+- [x] Move assets and Event Information to Firebase
+- [ ] Add new events after 2021
+- [ ] Make it look prettier
