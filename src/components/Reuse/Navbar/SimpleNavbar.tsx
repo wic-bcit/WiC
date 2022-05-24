@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 class SimpleNavbar extends React.Component {
   goHome = () => {
-    window.open("/WiC", "_self");
+    window.open("/", "_self");
   };
 
   render() {
