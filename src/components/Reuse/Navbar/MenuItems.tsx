@@ -4,7 +4,7 @@ export const MenuItems = [
     url: "/",
     cName: "nav-links",
     id: "WiC",
-    offset: -50,
+    offset: -55,
   },
   {
     title: "About Us",
@@ -13,26 +13,26 @@ export const MenuItems = [
     id: "About",
     offset: -55,
   },
+  // {
+  //   title: "Featured",
+  //   url: "/",
+  //   cName: "nav-links",
+  //   id: "Featured",
+  //   offset: -55,
+  // },
   {
     title: "Events",
     url: "/",
     cName: "nav-links",
     id: "Event",
-    offset: -160,
+    offset: -55,
   },
-  // {
-  //   title: "Team",
-  //   url: "/",
-  //   cName: "nav-links",
-  //   id: "Team",
-  //   offset: -60,
-  // },
   {
     title: "Join Us",
     url: "/",
     cName: "nav-links",
     id: "Join",
-    offset: -50,
+    offset: -55,
   },
 ];
 

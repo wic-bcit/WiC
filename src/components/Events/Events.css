@@ -5,16 +5,16 @@
   padding: 15px;
 }
 
-.event-description {
+.event-info-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 20px;
+  grid-gap: 30px;
   max-width: 800px;
   margin: 0;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.poster {
+.event-poster {
   height: auto;
   width: 200px;
   border-radius: 10px;
@@ -39,15 +39,20 @@
 .event-details h3 {
   color: var(--main-accent);
   margin: 0;
+  margin-bottom: 10px;
 }
 
-.event-details p {
+/* .event-details-desc { */
+.css-901oao {
   text-align: justify;
+  color: var(--main-dark);
+  font-family: "Raleway", sans-serif;
   font-size: var(--font-size-m);
 }
 
 .event-details-register {
   margin-top: 50px;
+  margin-bottom: 50px;
   width: fit-content;
 }
 
@@ -61,28 +66,35 @@
 .btn-container {
   width: fit-content;
   margin: 0 auto;
-  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 996px) {
-  .event-description {
+  .event-info-container {
     margin: 20px;
-    margin-bottom: 50px;
+  }
+  .event-details-register {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  .btn.register {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .event-description {
+@media screen and (max-width: 500px) {
+  .event-info-container {
     grid-template-columns: repeat(1, auto);
+  }
+
+  /* .event-details-desc { */
+  .css-901oao {
+    text-align: left;
+    font-size: var(--font-size-s);
   }
 
   .event-details-register {
     margin: 0 auto;
-    margin-top: 30px;
-  }
-
-  .event-details p {
-    text-align: left;
-    font-size: var(--font-size-s);
   }
 }

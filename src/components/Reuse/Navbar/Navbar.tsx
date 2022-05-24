@@ -11,7 +11,7 @@ class Navbar extends React.Component {
   };
 
   goHome = () => {
-    window.open("/", "_self");
+    window.open("/WiC", "_self");
   };
 
   render() {
@@ -55,7 +55,6 @@ class Navbar extends React.Component {
           </ul>
         </div>
       </nav>
-      // </Router>
     );
   }
 }
