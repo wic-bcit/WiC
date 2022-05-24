@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Text } from "react-native";
 import { db } from "../../firebase/firebase-config";
 import { query, orderBy, collection, getDocs } from "firebase/firestore";
-
-import { Event, Links } from "./Event";
+import { Event } from "./Event";
 import "./Events.css";
 import "../../App.css";
 
@@ -27,7 +26,12 @@ export default function EventCards(props: any) {
       {events.slice(0, end).map((e: Event) => {
         return (
           <div className="event-description" key={e.id}>
-            <img src={e.img} alt={e.title} className="event-poster"></img>
+            <img
+              src={e.img}
+              alt={e.title}
+              className="event-poster"
+              width="500"
+            ></img>
 
             <div className="event-details">
               <div className="event-details-text">
@@ -48,20 +52,6 @@ export default function EventCards(props: any) {
                 >
                   Register Here
                 </a>
-                {/* Extra Links? */}
-                {/* {e.links.map((item: Links) => {
-                  return (
-                    <a
-                      className={"btn register"}
-                      href={item.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      // key={key}
-                    >
-                      {item.name}
-                    </a>
-                  ); */}
-                {/* })} */}
               </div>
             </div>
           </div>
