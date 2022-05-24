@@ -27,7 +27,7 @@ export default function EventCards(props: any) {
       {events.slice(0, end).map((e: Event) => {
         return (
           <div className="event-description" key={e.id}>
-            <img src={e.img} alt={e.title} className="poster"></img>
+            <img src={e.img} alt={e.title} className="event-poster"></img>
 
             <div className="event-details">
               <div className="event-details-text">

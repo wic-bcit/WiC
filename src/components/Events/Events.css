@@ -5,13 +5,13 @@
   padding: 15px;
 }
 
-.event-info-container {
+.event-description {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 30px;
+  grid-gap: 20px;
   max-width: 800px;
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .event-poster {
@@ -39,21 +39,22 @@
 .event-details h3 {
   color: var(--main-accent);
   margin: 0;
-  margin-bottom: 10px;
 }
 
-/* .event-details-desc { */
-.css-901oao {
+.event-details p {
   text-align: justify;
-  color: var(--main-dark);
-  font-family: "Raleway", sans-serif;
   font-size: var(--font-size-m);
 }
 
 .event-details-register {
   margin-top: 50px;
-  margin-bottom: 50px;
   width: fit-content;
+}
+
+.btn-container {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .css-text-901oao {
@@ -63,38 +64,25 @@
   font-size: var(--font-size-m);
 }
 
-.btn-container {
-  width: fit-content;
-  margin: 0 auto;
-}
-
 @media screen and (max-width: 996px) {
-  .event-info-container {
+  .event-description {
     margin: 20px;
-  }
-  .event-details-register {
-    display: grid;
-    grid-template-rows: 1fr;
-  }
-  .btn.register {
-    margin: 0;
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: 50px;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .event-info-container {
+@media screen and (max-width: 450px) {
+  .event-description {
     grid-template-columns: repeat(1, auto);
-  }
-
-  /* .event-details-desc { */
-  .css-901oao {
-    text-align: left;
-    font-size: var(--font-size-s);
   }
 
   .event-details-register {
     margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .event-details p {
+    text-align: left;
+    font-size: var(--font-size-s);
   }
 }

@@ -4,7 +4,6 @@ import HomePage from "./components/Home/HomePage";
 import EventsArchivePage from "./components/Events/EventsArchivePage";
 
 import "./App.css";
-import "./";
 
 class App extends React.Component {
   render() {

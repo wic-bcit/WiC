@@ -5,8 +5,7 @@ import Events from "../Events/Events";
 import WiC from "./WiC";
 import AboutUs from "./AboutUs";
 import Join from "./Join";
-// number: number of most recent events,
-// function HomePage(Props) {
+
 export default class HomePage extends React.Component {
   render() {
     return (

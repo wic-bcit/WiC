@@ -23,12 +23,8 @@
   font-family: "Raleway", sans-serif;
   text-align: left;
 }
-<<<<<<< HEAD:src/components/Home/Join.css
 
 @media screen and (max-width: 600px) {
-=======
-@media screen and (max-width: 500px) {
->>>>>>> main:src/css/Join.css
   .join-container {
     grid-gap: 20px;
     font-size: var(--font-size-s);
