@@ -30,9 +30,9 @@ const AboutUs = () => {
           <br /> <br />
           Thank you!
         </p>
-        <Link className={"page-link"} to="/exec-archive">
+        {/* <Link className={"page-link"} to="/exec-archive">
           View Executive Team ▸
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
