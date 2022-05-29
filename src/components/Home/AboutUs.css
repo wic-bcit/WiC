@@ -1,0 +1,22 @@
+@import "../../App.css";
+
+.about-details {
+  font-family: var(--font-text);
+  font-size: var(--font-size-m);
+  line-height: 25px;
+  text-align: justify;
+}
+
+.about-detail-container {
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  .about-details {
+    font-size: var(--font-size-s);
+    line-height: 20px;
+    text-align: justify;
+  }
+}

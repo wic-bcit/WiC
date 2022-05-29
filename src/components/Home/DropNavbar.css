@@ -1,0 +1,185 @@
+@import "../../App.css";
+/* -------------------------------------- */
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.Navbar {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--main-light);
+  display: flex;
+  font-family: var(--font-header);
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 70px;
+  margin: 0;
+  justify-content: left;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.dropdown-toggle {
+  color: var(--white) !important;
+}
+
+/* WiC Logo --------------------------------- */
+
+.navbar-logo {
+  text-align: left;
+  padding: 10px;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.navbar-logo img {
+  width: 50px;
+  height: auto;
+  float: left;
+  margin-right: 5px;
+}
+
+.navbar-logo img:hover,
+.navbar-logo h1 {
+  cursor: pointer;
+}
+
+.navbar-logo h1 {
+  color: var(--main-dark);
+  width: 170px;
+  height: auto;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 5px;
+}
+
+/* SimpleNav */
+.home-link {
+  width: fit-content;
+  margin-left: auto;
+}
+
+/* Menu Items --------------------------------- */
+.menu-icon {
+  margin: 0;
+  width: fit-content;
+  display: none;
+}
+
+.navbar-toggler {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-menu.nav {
+  display: grid;
+  justify-content: end;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  font-size: 15px;
+}
+
+.nav-links {
+  color: var(--white);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-links:hover {
+  cursor: pointer;
+  background-color: var(--hover);
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+}
+
+.fa-bars,
+.fa-times {
+  color: var(--white);
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* Nav Menu Icon------------------------------ */
+
+  .menu-icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-70%, 70%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-70%, 50%);
+    font-size: 2.2rem;
+  }
+
+  /* Nav Menu---------------------------------- */
+  .Navbar {
+    padding: 0;
+    background-color: var(--main-light);
+  }
+
+  /* .Menu {
+    width: 100%;
+    padding: 0;
+  } */
+
+  .nav-menu.nav {
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 35px;
+    justify-content: center;
+    height: fit-content;
+    grid-template-columns: repeat(1, auto);
+    width: 100%;
+    background-color: var(--main-off-light);
+    position: absolute;
+    left: -200%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background-color: var(--main-off-light);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex: 1;
+  }
+
+  .nav-links:hover {
+    background: var(--hover);
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav-links {
+    font-size: var(--font-size-xl);
+  }
+}

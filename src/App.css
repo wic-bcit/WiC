@@ -1,0 +1,57 @@
+/* "Bungee", cursive */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+/* "Raleway", sans-serif */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
+/* 'Roboto', sans-serif */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* 'Montserrat', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --main-light: #8dd3df;
+  --main-dark: #152b2f;
+  --main-accent: #548da3;
+  --main-white: #ffffff;
+  --main-yellow: #ffd419;
+  --main-off-light: #76c1ce;
+
+  --font-size-xl: 40px;
+  --font-size-l: 20px;
+  --font-size-m: 18px;
+  --font-size-s: 15px;
+
+  --shadow: rgba(59, 59, 75, 0.616);
+  --white: #ffffff;
+  --hover: #488994;
+
+  --font-header: "Bungee", cursive;
+  /* --font-text: "Raleway", sans-serif; */
+  /* --font-text: "Roboto", sans-serif; */
+  --font-text: "Montserrat", sans-serif;
+  --font-link: "Bungee", cursive;
+  --font-btn: "Bungee", cursive;
+  --font-event-link: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+}
+
+.Title {
+  font-family: var(--font-header);
+  color: var(--main-dark);
+  font-size: var(--font-size-xl);
+  text-align: center;
+  margin: 0px;
+}
+
+.Section {
+  background-color: var(--white);
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
