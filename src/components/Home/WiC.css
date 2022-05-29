@@ -1,3 +1,5 @@
+@import "../../App.css";
+
 .WiC {
   padding: 50px;
   background-color: var(--main-light);

@@ -1,5 +1,7 @@
 import React from "react";
-import EventCards from "./EventCards";
+import { Link } from "react-router-dom";
+
+import EventCards from "./EventTemplate";
 import SimpleNavbar from "../Reuse/Navbar/SimpleNavbar";
 import Footer from "../Reuse/Footer/Footer";
 
@@ -13,9 +15,9 @@ const EventsArchivePage = () => {
       <div className="event-container">
         <EventCards />
         <div className="btn-container">
-          <a className="page-link" href="/">
+          <Link className={"page-link"} to="/">
             ◂ Return Home
-          </a>
+          </Link>
         </div>
       </div>
       <Footer />

@@ -1,10 +1,12 @@
+@import "../../../App.css";
+
 .btn {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-btn);
   border: 5px solid var(--main-accent);
   border-radius: 5px;
   background-color: var(--white);
   color: var(--main-accent);
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
   font-size: var(--font-size-m);
   text-decoration: none;
   box-shadow: -1px 2px 4px var(--shadow);
@@ -32,10 +34,23 @@
 }
 
 .page-link {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-link);
   color: var(--main-accent);
   font-size: var(--font-size-l);
   border-bottom: 3px solid var(--main-accent);
   line-height: 1px;
   padding-bottom: 0px;
+}
+
+.event-link {
+  font-family: var(--font-event-link);
+  color: var(--main-accent);
+  font-size: var(--font-size-l);
+  text-decoration: underline;
+  line-height: 1px;
+  padding-bottom: 0px;
+}
+
+.event-link.empty {
+  display: none;
 }

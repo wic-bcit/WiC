@@ -27,7 +27,41 @@ Note: Ignore the other files not mentioned. Also not sure about how I did the fi
         - index.tsx:
             - Redenders App.tsx
 
-# Updating Firebase
+# Updating Firebase Events
+
+You can either use the python script in `./firebase_py/Firebase.py` to add the new events details or manually add the event on [Firebase Storage](https://console.firebase.google.com/u/2/project/wicwebiste/storage/wicwebiste.appspot.com/files). I recommend using the Python script as you will only need to change the event details on main instead of manualy adding the feilds individually in Firestore.
+
+## Add Event using Python to Firebase
+
+Run the script to add events with the necessary feilds.
+
+1. `cd ./firebase_py/`
+2. Modify the main script `Firebase.py` and change the following:
+
+```
+    event = Event()
+
+    event.title = ""
+    event.description = description
+
+    event.img = ""
+    event.is_active = False
+    event.links.append({"name":"", "url":""})
+    event.register = "#"
+    event.event_date = datetime.datetime(2022, 6, 1) # year, month, day
+    event.event_time = ""
+    event.venue = ""
+```
+
+3. Run the following command:
+
+```
+python Firebase.py
+```
+
+## Add Event Manually to Firebase
+
+Best use for updating minor changes to existing event. You can still use this for adding new events but its annoying.
 
 1. Login to [Firebase](https://console.firebase.google.com/u/2/project/wicwebiste/firestore/data/~2Fevents~2FMB3A1VS3flmJS7pts3kJ) using the WiC gmail account.
 2. Add Event poster image to [Firebase Storage](https://console.firebase.google.com/u/2/project/wicwebiste/storage/wicwebiste.appspot.com/files). Upload image to `/<event year>` then use image link for `img` field:
@@ -40,11 +74,19 @@ Note: Ignore the other files not mentioned. Also not sure about how I did the fi
 - description:string = <Event Description>
 - img:string = <Image from storage link>
 - isActive:boolean = <true/false>
+- links:array =
+    <map> (Leave empty if no additional links)
+        <name:string> - link name
+        <url:string>  - link url
 - register:string = <Registration Link>
 - date:timestamp = <Add date field, time field can be left empty>
 - time:string = <Time of event>
 - venue:string = <Platform using (Discord, Zoom, etc.)>
 ```
+
+# Updating Firebase Execs
+
+Add more info later.
 
 # Usage
 

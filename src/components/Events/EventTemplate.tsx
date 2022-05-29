@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Text } from "react-native";
 import { db } from "../../firebase/firebase-config";
 import { query, orderBy, collection, getDocs } from "firebase/firestore";
-import { Event } from "./Event";
+import { Event, Links } from "./Event";
 import "./Events.css";
-import "../../App.css";
 
 export default function EventCards(props: any) {
   const [events, setEvents]: any = useState([]);
@@ -39,13 +38,26 @@ export default function EventCards(props: any) {
                 <h3>{e.date.toDate().toDateString() + "  |  " + e.time}</h3>
                 <Text>{e.description.replaceAll("/n", "\n")}</Text>
 
-                <br />
-                <br />
-                <i>{e.note}</i>
+                {e.links.map((link: Links) => {
+                  return (
+                    <a
+                      className={
+                        link.name != null ? "event-link" : "event-link empty"
+                      }
+                      href={link.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <br />
+                      <br />
+                      {link.name}
+                    </a>
+                  );
+                })}
               </div>
               <div className="event-details-register">
                 <a
-                  className={e.isActive ? "btn register" : "btn empty"}
+                  className={e.isActive ? "btn" : "btn empty"}
                   href={e.register}
                   target="_blank"
                   rel="noreferrer"

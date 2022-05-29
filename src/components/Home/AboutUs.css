@@ -1,5 +1,7 @@
+@import "../../App.css";
+
 .about-details {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-text);
   font-size: var(--font-size-m);
   line-height: 25px;
   text-align: justify;

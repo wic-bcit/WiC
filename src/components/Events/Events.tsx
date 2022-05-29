@@ -1,6 +1,6 @@
 import React from "react";
-import EventCards from "./EventCards";
-
+import { Link } from "react-router-dom";
+import EventTemplate from "./EventTemplate";
 import "./Events.css";
 
 export default function Events(props: any) {
@@ -9,11 +9,11 @@ export default function Events(props: any) {
       <h1 className="Title">Events</h1>
       <div className="Events" id="Event">
         <div className="event-container">
-          <EventCards preview={props.preview} />
+          <EventTemplate preview={props.preview} />
           <div className="btn-container">
-            <a className="page-link" href="/event-archive">
+            <Link className={"page-link"} to="/event-archive">
               View Past Events ▸
-            </a>
+            </Link>
           </div>
         </div>
       </div>

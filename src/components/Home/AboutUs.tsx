@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./AboutUs.css";
 
 const AboutUs = () => {
@@ -29,6 +30,9 @@ const AboutUs = () => {
           <br /> <br />
           Thank you!
         </p>
+        <Link className={"page-link"} to="/exec-archive">
+          View Executive Team ▸
+        </Link>
       </div>
     </div>
   );

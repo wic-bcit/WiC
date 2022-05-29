@@ -1,3 +1,5 @@
+@import "../../App.css";
+
 .join-container {
   display: grid;
   grid-template-columns: 20% 70%;
@@ -20,7 +22,7 @@
 }
 
 .join-info p {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-text);
   text-align: left;
 }
 

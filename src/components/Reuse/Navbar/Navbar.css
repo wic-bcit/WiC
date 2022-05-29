@@ -1,39 +1,4 @@
-/* Logo Font */
-/* font-family: 'Bungee', cursive; */
-@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
-
-/* Colours  */
-:root {
-  --main-light: #8dd3df;
-  --main-dark: #152b2f;
-  --main-off-light: #76c1ce;
-  --white: #ffffff;
-  --hover: #488994;
-}
-
-/* -------------------------------------- */
-/* Logo Font */
-/* font-family: 'Bungee', cursive; */
-@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
-
-/* Text Font */
-/* font-family: 'Raleway', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
-
-:root {
-  --main-light: #8dd3df;
-  --main-dark: #152b2f;
-  --main-accent: #548da3;
-  --main-white: #ffffff;
-  --main-yellow: #ffd419;
-
-  --font-size-xl: 40px;
-  --font-size-l: 20px;
-  --font-size-m: 18px;
-  --font-size-s: 15px;
-
-  --shadow: rgba(59, 59, 75, 0.616);
-}
+@import "../../../App.css";
 
 /* -------------------------------------- */
 
@@ -48,7 +13,7 @@ a {
   color: var(--white);
   background-color: var(--main-light);
   display: flex;
-  font-family: "Bungee", cursive;
+  font-family: var(--font-header);
   padding-left: 30px;
   padding-right: 30px;
   height: 70px;
