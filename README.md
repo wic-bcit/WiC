@@ -36,27 +36,44 @@ You can either use the python script in `./firebase_py/Firebase.py` to add the n
 Run the script to add events with the necessary feilds.
 
 1. `cd ./firebase_py/`
-2. Modify the main script `Firebase.py` and change the following:
+2. Go to `fb.py` modify `set_event_info()` and change the following:
 
 ```
-    event = Event()
+description = (
+"""
+Add description here
+""")
 
-    event.title = ""
-    event.description = description
+# Add Event
+event = Event()
+event.title = ""
+event.desc = description.replace("\n", "/n")
 
-    event.img = ""
-    event.is_active = False
-    event.links.append({"name":"", "url":""})
-    event.register = "#"
-    event.event_date = datetime.datetime(2022, 6, 1) # year, month, day
-    event.event_time = ""
-    event.venue = ""
+event.img = ""
+event.is_active = False
+event.register = ""
+
+# uncomment if additional links needed
+# event.links.append({"name":"", "url":""})
+
+# year, month, day
+event.date = datetime.datetime(2022, 5, 1).astimezone(timezone('US/Pacific'))
+event.time = ""
+event.venue = ""
 ```
 
-3. Run the following command:
+3. Go to main and uncomment the following (Make sure the other functions in main are commented out unless you are using them)
 
 ```
-python Firebase.py
+# ADD NEW EVENTS: Uncomment and modify set_event_info()
+event = fb.set_event_info()
+fb.add_event(event)
+```
+
+4. Run the following command:
+
+```
+python fb.py
 ```
 
 ## Add Event Manually to Firebase
@@ -88,6 +105,69 @@ Best use for updating minor changes to existing event. You can still use this fo
 
 Add more info later.
 
+## Adding new Exec Memembers
+
+Run the script to add events with the necessary feilds.
+
+1. `cd ./firebase_py/`
+2. Go to `fb.py` modify `set_exec_info()` and change the following:
+
+```
+exec = Exec()
+exec.name = ""
+exec.program = ""
+exec.img = ""
+```
+
+3. Go to main and uncomment the following (Make sure the other functions in main are commented out unless you are using them)
+
+```
+# ADD NEW EXECE MEMBERS: Uncomment and modify set_exec_info()
+exec = fb.set_exec_info()
+fb.add_exec(exec)
+```
+
+4. Run the following command:
+
+```
+python fb.py
+```
+
+## Adding new Semester Team
+
+Run the script to add events with the necessary feilds.
+
+1. `cd ./firebase_py/`
+2. Go to `fb.py` modify `set_team_info()` and change the following ([Click Here](https://console.firebase.google.com/u/2/project/wicwebiste/firestore/data/~2Fexecs~2F%20%20christy_yau) to view exec reference name):
+
+```
+Put param isFall=True/False and and the year team is running
+team = Team(isFall=False, year=2019)
+ref  = self.db.collection('execs')
+
+# Uncomment unecceary positions and feel free to change if needed {"role":exec reference in firebase}
+
+team.execs.append({"president":ref.document('name')})
+team.execs.append({"vp"       :ref.document('name')})
+team.execs.append({"treasurer":ref.document('name')})
+team.execs.append({"executive":ref.document('name')})
+team.execs.append({"executive":ref.document('name')})
+```
+
+3. Go to main and uncomment the following (Make sure the other functions in main are commented out unless you are using them)
+
+```
+# ADD NEW EXECE MEMBERS: Uncomment and modify set_exec_info()
+exec = fb.set_exec_info()
+fb.add_exec(exec)
+```
+
+4. Run the following command:
+
+```
+python fb.py
+```
+
 # Usage
 
 ## Starting React
@@ -95,6 +175,7 @@ Add more info later.
 1. `npm install` this will install the packages needed to build react
 2. `npm start` this starts up the server and automatically open the page on your browser.
 3. `http://localhost:3000`
+4. Check `/src/Routes.tsx` if browser shows a blank screen. Change the browser url if necessary.
 
 ## Closing React server
 
@@ -116,5 +197,10 @@ _(Feel free to add more things here)_
 
 - [x] Change from JS to Typescript
 - [x] Move assets and Event Information to Firebase
-- [ ] Add new events after 2021
+- [x] Add new events after 2021
+- [ ] Team Page
+  - [ ] Fix loading Firestore exec info
+- [ ] Events Page
+  - [ ] Add poster image zoom
+  - [ ] Add text design
 - [ ] Make it look prettier

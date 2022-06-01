@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
+import { home_route } from "../../../Routes";
 
 class Navbar extends React.Component {
   state = { clicked: false };
@@ -11,7 +12,7 @@ class Navbar extends React.Component {
   };
 
   goHome = () => {
-    window.open("/", "_self");
+    window.open(home_route, "_self");
   };
 
   render() {

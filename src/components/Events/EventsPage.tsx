@@ -1,21 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-import EventCards from "./EventTemplate";
+import EventTemplate from "./EventTemplate";
 import SimpleNavbar from "../Reuse/Navbar/SimpleNavbar";
 import Footer from "../Reuse/Footer/Footer";
-
+import { home_route } from "../../Routes";
 import "./Events.css";
 
-const EventsArchivePage = () => {
+export default function EventsPage() {
   return (
-    <div className="EventsArchivePage">
+    <div className="EventsPage">
       <SimpleNavbar />
       <h1 className="Title">Past Events</h1>
       <div className="event-container">
-        <EventCards />
+        <EventTemplate preview={0} />
         <div className="btn-container">
-          <Link className={"page-link"} to="/">
+          <Link className={"page-link"} to={home_route}>
             ◂ Return Home
           </Link>
         </div>
@@ -23,6 +22,6 @@ const EventsArchivePage = () => {
       <Footer />
     </div>
   );
-};
+}
 
-export default EventsArchivePage;
+// export default EventsPage;

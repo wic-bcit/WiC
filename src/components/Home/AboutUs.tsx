@@ -30,8 +30,8 @@ const AboutUs = () => {
           <br /> <br />
           Thank you!
         </p>
-        {/* <Link className={"page-link"} to="/exec-archive">
-          View Executive Team ▸
+        {/* <Link className={"page-link"} to="/team-page">
+          View the WiC Team ▸
         </Link> */}
       </div>
     </div>

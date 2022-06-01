@@ -1,9 +1,11 @@
 import React from "react";
+import { home_route } from "../../../Routes";
+
 import "./Navbar.css";
 
 class SimpleNavbar extends React.Component {
   goHome = () => {
-    window.open("/", "_self");
+    window.open(home_route, "_self");
   };
 
   render() {
@@ -21,7 +23,7 @@ class SimpleNavbar extends React.Component {
         </div>
 
         <div className="home-link">
-          <a className="nav-links simple" href="/">
+          <a className="nav-links simple" href={home_route}>
             Home
           </a>
         </div>

@@ -1,8 +1,13 @@
+import { Timestamp } from "firebase/firestore";
+
 export interface Exec {
   name: string;
-  role: string;
   img: string;
   program: string;
-  year: number;
-  semseter: string;
+}
+
+export interface Team {
+  start: Timestamp;
+  end: Timestamp;
+  execs: [];
 }

@@ -11,8 +11,8 @@ export default function Events(props: any) {
         <div className="event-container">
           <EventTemplate preview={props.preview} />
           <div className="btn-container">
-            <Link className={"page-link"} to="/event-archive">
-              View Past Events ▸
+            <Link className={"page-link"} to="/events-page">
+              Checkout our Past Events ▸
             </Link>
           </div>
         </div>

@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Text } from "react-native";
 import { db } from "../../firebase/firebase-config";
 import { query, orderBy, collection, getDocs } from "firebase/firestore";
 import { Event, Links } from "./Event";
+import { Text } from "react-native";
+
 import "./Events.css";
 
-export default function EventCards(props: any) {
+export default function EventTemplate(props: any = 0) {
   const [events, setEvents]: any = useState([]);
   const eventsCollectionRef = collection(db, "events");
   const q = query(eventsCollectionRef, orderBy("date", "desc"));
@@ -20,11 +21,12 @@ export default function EventCards(props: any) {
 
   let end: number =
     Number(props.preview) > 0 ? Number(props.preview) : events.length;
+
   return (
     <div className="Event">
-      {events.slice(0, end).map((e: Event) => {
+      {events.slice(0, end).map((e: Event, key: number) => {
         return (
-          <div className="event-description" key={e.id}>
+          <div className="event-description" key={key}>
             <img
               src={e.img}
               alt={e.title}
@@ -38,7 +40,7 @@ export default function EventCards(props: any) {
                 <h3>{e.date.toDate().toDateString() + "  |  " + e.time}</h3>
                 <Text>{e.description.replaceAll("/n", "\n")}</Text>
 
-                {e.links.map((link: Links) => {
+                {e.links.map((link: Links, key1: number) => {
                   return (
                     <a
                       className={
@@ -47,15 +49,21 @@ export default function EventCards(props: any) {
                       href={link.url}
                       target="_blank"
                       rel="noreferrer"
+                      key={key1}
                     >
-                      <br />
-                      <br />
+                      <br /> <br />
                       {link.name}
                     </a>
                   );
                 })}
               </div>
-              <div className="event-details-register">
+              <div
+                className={
+                  e.isActive
+                    ? "event-details-register active"
+                    : "event-details-register"
+                }
+              >
                 <a
                   className={e.isActive ? "btn" : "btn empty"}
                   href={e.register}
