@@ -4,21 +4,18 @@
   display: grid;
   grid-template-columns: 20% 70%;
   align-items: center;
-  justify-items: center;
-  text-align: center;
   max-width: 700px;
   width: 80%;
   padding: 10px;
   margin: 0 auto;
   margin-bottom: 30px;
   font-size: var(--font-size-m);
-  /* background-color: brown; */
+  grid-gap: 20px;
 }
 
 .join-container img {
   width: 100px;
   height: auto;
-  padding-right: 30px;
 }
 
 .join-info p {
@@ -26,9 +23,11 @@
   text-align: left;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .join-container {
-    grid-gap: 20px;
+    grid-template-columns: 30% 60%;
+    grid-gap: 30px;
+    max-width: none;
     font-size: var(--font-size-s);
   }
 }

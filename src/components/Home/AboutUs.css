@@ -1,5 +1,11 @@
 @import "../../App.css";
 
+.about-detail-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .about-details {
   font-family: var(--font-text);
   font-size: var(--font-size-m);
@@ -7,16 +13,16 @@
   text-align: justify;
 }
 
-.about-detail-container {
-  width: 70%;
-  max-width: 1000px;
-  margin: 0 auto;
+@media screen and (max-width: 850px) {
+  .about-detail-container {
+    width: 700px;
+    background-color: rgb(151, 151, 253);
+  }
 }
 
-@media screen and (max-width: 500px) {
-  .about-details {
-    font-size: var(--font-size-s);
-    line-height: 20px;
-    text-align: justify;
+@media screen and (max-width: 768px) {
+  .about-detail-container {
+    margin: 0 auto;
+    width: 90%;
   }
 }

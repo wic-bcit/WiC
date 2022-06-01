@@ -34,7 +34,7 @@
   color: var(--white);
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 768px) {
   .WiC {
     padding: 0px;
     background-color: var(--main-light);
@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
   .WiC {
     padding: 20px;
     background-color: var(--main-light);
