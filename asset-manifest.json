@@ -1,22 +1,15 @@
 {
-  "files": {
-    "main.css": "/WiC/static/css/main.a9b7499b.chunk.css",
-    "main.js": "/WiC/static/js/main.bdfe2e20.chunk.js",
-    "main.js.map": "/WiC/static/js/main.bdfe2e20.chunk.js.map",
-    "runtime-main.js": "/WiC/static/js/runtime-main.7ca3df28.js",
-    "runtime-main.js.map": "/WiC/static/js/runtime-main.7ca3df28.js.map",
-    "static/js/2.ceb4d75f.chunk.js": "/WiC/static/js/2.ceb4d75f.chunk.js",
-    "static/js/2.ceb4d75f.chunk.js.map": "/WiC/static/js/2.ceb4d75f.chunk.js.map",
-    "static/js/3.948782e9.chunk.js": "/WiC/static/js/3.948782e9.chunk.js",
-    "static/js/3.948782e9.chunk.js.map": "/WiC/static/js/3.948782e9.chunk.js.map",
-    "index.html": "/WiC/index.html",
-    "static/css/main.a9b7499b.chunk.css.map": "/WiC/static/css/main.a9b7499b.chunk.css.map",
-    "static/js/2.ceb4d75f.chunk.js.LICENSE.txt": "/WiC/static/js/2.ceb4d75f.chunk.js.LICENSE.txt"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.7ca3df28.js",
-    "static/js/2.ceb4d75f.chunk.js",
-    "static/css/main.a9b7499b.chunk.css",
-    "static/js/main.bdfe2e20.chunk.js"
-  ]
+  "main.css": "/WiC/static/css/main.bc941bc2.chunk.css",
+  "main.js": "/WiC/static/js/main.efbbfb19.chunk.js",
+  "main.js.map": "/WiC/static/js/main.efbbfb19.chunk.js.map",
+  "static/js/1.4567e6b4.chunk.js": "/WiC/static/js/1.4567e6b4.chunk.js",
+  "static/js/1.4567e6b4.chunk.js.map": "/WiC/static/js/1.4567e6b4.chunk.js.map",
+  "static/js/2.dacb0094.chunk.js": "/WiC/static/js/2.dacb0094.chunk.js",
+  "static/js/2.dacb0094.chunk.js.map": "/WiC/static/js/2.dacb0094.chunk.js.map",
+  "runtime~main.js": "/WiC/static/js/runtime~main.8bd291d9.js",
+  "runtime~main.js.map": "/WiC/static/js/runtime~main.8bd291d9.js.map",
+  "static/css/main.bc941bc2.chunk.css.map": "/WiC/static/css/main.bc941bc2.chunk.css.map",
+  "index.html": "/WiC/index.html",
+  "precache-manifest.affcb5a7e86a8288fac45d8041e823a2.js": "/WiC/precache-manifest.affcb5a7e86a8288fac45d8041e823a2.js",
+  "service-worker.js": "/WiC/service-worker.js"
 }
