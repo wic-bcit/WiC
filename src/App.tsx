@@ -4,7 +4,6 @@ import HomePage from "./components/Home/HomePage";
 import EventsPage from "./components/Events/EventsPage";
 import TeamPage from "./components/Execs/TeamPage";
 
-import { home_route, events_route, team_route } from "./Routes";
 import "./App.css";
 
 class App extends React.Component {
@@ -14,9 +13,9 @@ class App extends React.Component {
         <Router basename={process.env.PUBLIC_URL}>
           <div>
             <Routes>
-              <Route path={home_route} element={<HomePage />} />
-              <Route path={events_route} element={<EventsPage />} />
-              <Route path={team_route} element={<TeamPage />} />
+              <Route path={"/"} element={<HomePage />} />
+              <Route path={"/events-page"} element={<EventsPage />} />
+              <Route path={"/team-page"} element={<TeamPage />} />
             </Routes>
           </div>
         </Router>
