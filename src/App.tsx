@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./components/Home/HomePage";
 import EventsPage from "./components/Events/EventsPage";
 import TeamPage from "./components/Execs/TeamPage";
-
 import "./App.css";
 
 class App extends React.Component {

@@ -2,19 +2,19 @@
 
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "@firebase/firestore";
+require("dotenv").config();
+
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA4AZhHkrNJuzv7bOfC-TA7DLoLKuBCj74",
-  authDomain: "wicwebiste.firebaseapp.com",
-  databaseURL: "https://wicwebiste-default-rtdb.firebaseio.com",
-  projectId: "wicwebiste",
-  storageBucket: "wicwebiste.appspot.com",
-  messagingSenderId: "892492600532",
-  appId: "1:892492600532:web:42c6a635e6a3d829ae9741",
-  measurementId: "G-XW494B0XFV",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DB,
+  projectId: process.env.REACT_APP_FIREBASE_PRJ_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FREACT_APP_IREBASE_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASURMENT_ID,
 };
-
-// Initialize Firebase
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);

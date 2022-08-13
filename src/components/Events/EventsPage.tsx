@@ -14,7 +14,7 @@ export default function EventsPage() {
       <div className="event-container">
         <EventTemplate preview={0} />
         <div className="btn-container">
-          <Link className={"page-link"} to={home_route}>
+          <Link className={"page-link"} to={"/"}>
             ◂ Return Home
           </Link>
         </div>
