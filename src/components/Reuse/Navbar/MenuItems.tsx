@@ -21,6 +21,13 @@ export const MenuItems = [
     offset: -170,
   },
   {
+    title: "Tech Blog",
+    url: "/",
+    cName: "nav-links",
+    id: "Blog",
+    offset: 0,
+  },
+  {
     title: "Join Us",
     url: "/",
     cName: "nav-links",

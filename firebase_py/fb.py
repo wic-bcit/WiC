@@ -63,26 +63,27 @@ class Firebase:
    
     def set_event_info(self):
         description = (
-"""
-Add description here
+"""✨Join us for an exciting and insightful evening with Shamez Meghji, a Software Development Engineer at Amazon in Vancouver! \
+    On Wednesday, October 2nd, 2024, Shamez will be visiting BCIT's Downtown Campus to share his experiences working at Amazon, offering a unique perspective on life as an SDE at one of the world’s leading tech companies. \
+    This is a fantastic opportunity for anyone interested in tech, software development, or the inner workings of Amazon. ☁️
 """)
         
-        # Add Event
+        # Add Event 
         event = Event()
-        event.title = ""
+        event.title = "Talk with Shamez"
         event.desc = description.replace("\n", "/n")
         
-        event.img = ""
-        event.is_active = False
+        event.img = "https://firebasestorage.googleapis.com/v0/b/wicwebiste.appspot.com/o/2024%2FshamezTalk.png?alt=media&token=63b31054-ce25-4a7b-8d14-d50554acd99c"
+        event.is_active = True
         event.register = ""
         
         # uncomment if additional links needed
         # event.links.append({"name":"", "url":""})
         
         # year, month, day
-        event.date = datetime.datetime(2022, 5, 1).astimezone(timezone('US/Pacific'))
-        event.time = ""
-        event.venue = ""
+        event.date = datetime.datetime(2024, 10, 2).astimezone(timezone('US/Pacific'))
+        event.time = "5:00-7:00 pm"
+        event.venue = "BCIT Downtown, Room 552"
         
         return event
         
@@ -122,6 +123,6 @@ if __name__ == "__main__":
     
     
     # ADD NEW SEM EXEC TEAM: Uncomment and modify set_team_info() 
-    team = fb.set_team_info()
-    fb.add_team(team)
+    # team = fb.set_team_info()
+    # fb.add_team(team)
     

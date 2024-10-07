@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./components/Home/HomePage";
 import EventsPage from "./components/Events/EventsPage";
 import TeamPage from "./components/Execs/TeamPage";
-import "./App.css";
+import BlogPage from "./components/Blog/BlogPage";
+import "./App.css"; 
 
 class App extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class App extends React.Component {
               <Route path={"/"} element={<HomePage />} />
               <Route path={"/events-page"} element={<EventsPage />} />
               <Route path={"/team-page"} element={<TeamPage />} />
+              <Route path={"/blog-page"} element={<BlogPage />} />
             </Routes>
           </div>
         </Router>
