@@ -26,4 +26,4 @@ yarn-error.log*
 
 # secrets
 .env
-/firebase_py/wicwebsite.json
+firebase_py/wicwebsite.json
