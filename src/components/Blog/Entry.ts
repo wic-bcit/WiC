@@ -9,13 +9,10 @@ export interface Links {
 export interface Entry {
   date: Timestamp;
   title: string;
+  subtitle: string;
   description: string;
+  body: string;
   img: string;
-  register: string;
   links: Links[];
-  time: string;
-  venue: string;
-  isActive: boolean;
   id: string;
-  note: string;
-}
+} 

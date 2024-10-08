@@ -15,7 +15,7 @@ export default class HomePage extends React.Component {
         <WiC />
         <AboutUs />
         <Events preview={3} />
-        <Blog />
+        <Blog preview={1}/>
         <Join />
         <Footer />
       </div>
