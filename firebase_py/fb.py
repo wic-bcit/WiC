@@ -5,7 +5,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
-from fb_classes import Event, Exec, Team
+from fb_classes import Event, Exec, Team, BlogEntry
 
 class Firebase:
     def __init__(self):
@@ -108,6 +108,58 @@ class Firebase:
         team.execs.append({"executive":ref.document('mikhaela_layon')})
         return team
     
+    def add_blog_entry(self, blogEntry: BlogEntry):
+        self.db.collection(u'blog').add({
+            # String - Blog entry title
+            u'title': blogEntry.title,
+            
+            # String - Blog entry subtitle
+            u'subtitle': blogEntry.subtitle,
+            
+            # String - short blog entry Description (Add "/n" to add new line for formatting)
+            u'description': blogEntry.desc,
+            
+            # String - Main blog entry body
+            u'body': blogEntry.body,
+            
+            # String - url link of image (found in Firebase storage)
+            u'img': blogEntry.img,
+            
+            # Array of Maps - additional links
+            u'links': blogEntry.links,
+            
+            # Timestamp - date of blog entry submission 
+            u'date':  blogEntry.date,
+            
+            }
+        )
+    
+     
+    def set_entry_info(self):
+        description = (
+"""askdlaslkdjaskdjaslkdajlkdjaks
+""")
+        body = (
+"""aslkdjalkdjaslkdjkasjdlkasjdlkajlkjk
+""" 
+        )
+        
+        # Add new blog entry 
+        blogEntry = BlogEntry()
+        blogEntry.title = "Tadasdasd"
+        blogEntry.subtitle ="SKDJAKSDJKsd"
+        blogEntry.desc = description.replace("\n", "/n")
+        blogEntry.body = body.replace("\n", "/n")
+
+        blogEntry.img = "https://firebasestorage.googleapis.com/v0/b/wicwebiste.appspot.com/o/2024%2FshamezTalk.png?alt=media&token=63b31054-ce25-4a7b-8d14-d50554acd99c"
+        
+        # uncomment if additional links needed
+        blogEntry.links.append({"name":"asdsad", "url":"adsasdasdasdasdasd.com"})
+        
+        # year, month, day
+        blogEntry.date = datetime.datetime(2024, 10, 2).astimezone(timezone('US/Pacific'))
+        
+        return blogEntry
     
 
 if __name__ == "__main__":
@@ -117,6 +169,13 @@ if __name__ == "__main__":
     # event = fb.set_event_info()
     # fb.add_event(event)
 
+    # ADD NEW BLOG ENTRY: Uncomment and modify set_entry_info() 
+    blogEntry = fb.set_entry_info()
+    fb.add_blog_entry(blogEntry)
+    
+    
+    
+    #########################
     # ADD NEW EXECE MEMBERS: Uncomment and modify set_exec_info() 
     # exec = fb.set_exec_info()
     # fb.add_exec(exec)

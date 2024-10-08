@@ -43,4 +43,13 @@ class Event:
         self.date=datetime.datetime(2022, 1, 1).astimezone(timezone('US/Pacific'))  # year, month, day
         self.time = ""
         self.venue=""
-      
+        
+class BlogEntry:
+    def __init__(self):
+        self.title=""
+        self.subtitle=""
+        self.desc=""
+        self.body=""
+        self.img=""
+        self.links=[]
+        self.date=datetime.datetime(2022, 1, 1).astimezone(timezone('US/Pacific'))  # year, month, day
