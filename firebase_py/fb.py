@@ -146,14 +146,13 @@ class Firebase:
         # Add new blog entry 
         blogEntry = BlogEntry()
         blogEntry.title = ""
-        blogEntry.subtitle =""
+        blogEntry.subtitle = ""
         blogEntry.desc = description.replace("\n", "/n")
         blogEntry.img = ""
         
-        # Add questions and answers (question, answer)
-        blogEntry.add_qa("Can you tell us a bit about your background?", 
-                      "I was in school for Biology and decided to take an elective CompSci course for fun. I had always been interested in coding...")
-
+        # Add questions and answers (Q: [question], [answer])
+        blogEntry.add_qa("Q: ","")
+        
         # uncomment if additional links needed
         blogEntry.links.append({"name":"", "url":""})
         
@@ -171,8 +170,8 @@ if __name__ == "__main__":
     # fb.add_event(event)
 
     # ADD NEW BLOG ENTRY: Uncomment and modify set_entry_info() 
-    blogEntry = fb.set_entry_info()
-    fb.add_blog_entry(blogEntry)
+    # blogEntry = fb.set_entry_info()
+    # fb.add_blog_entry(blogEntry)
     
     
     
