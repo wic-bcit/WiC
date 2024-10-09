@@ -108,6 +108,8 @@ class Firebase:
         team.execs.append({"executive":ref.document('mikhaela_layon')})
         return team
     
+    
+    # below are 2 blog functions
     def add_blog_entry(self, blogEntry: BlogEntry):
         self.db.collection(u'blog').add({
             # String - Blog entry title
@@ -119,9 +121,6 @@ class Firebase:
             # String - short blog entry Description (Add "/n" to add new line for formatting)
             u'description': blogEntry.desc,
             
-            # String - Main blog entry body
-            u'body': blogEntry.body,
-            
             # String - url link of image (found in Firebase storage)
             u'img': blogEntry.img,
             
@@ -131,33 +130,35 @@ class Firebase:
             # Timestamp - date of blog entry submission 
             u'date':  blogEntry.date,
             
+            # Array of Maps - main body Q&A
+            u'qa': blogEntry.qa
+            
             }
         )
     
-     
+    
     def set_entry_info(self):
         description = (
-"""askdlaslkdjaskdjaslkdajlkdjaks
+"""
 """)
-        body = (
-"""aslkdjalkdjaslkdjkasjdlkasjdlkajlkjk
-""" 
-        )
+        
         
         # Add new blog entry 
         blogEntry = BlogEntry()
-        blogEntry.title = "Tadasdasd"
-        blogEntry.subtitle ="SKDJAKSDJKsd"
+        blogEntry.title = ""
+        blogEntry.subtitle =""
         blogEntry.desc = description.replace("\n", "/n")
-        blogEntry.body = body.replace("\n", "/n")
-
-        blogEntry.img = "https://firebasestorage.googleapis.com/v0/b/wicwebiste.appspot.com/o/2024%2FshamezTalk.png?alt=media&token=63b31054-ce25-4a7b-8d14-d50554acd99c"
+        blogEntry.img = ""
         
+        # Add questions and answers (question, answer)
+        blogEntry.add_qa("Can you tell us a bit about your background?", 
+                      "I was in school for Biology and decided to take an elective CompSci course for fun. I had always been interested in coding...")
+
         # uncomment if additional links needed
-        blogEntry.links.append({"name":"asdsad", "url":"adsasdasdasdasdasd.com"})
+        blogEntry.links.append({"name":"", "url":""})
         
         # year, month, day
-        blogEntry.date = datetime.datetime(2024, 10, 2).astimezone(timezone('US/Pacific'))
+        blogEntry.date = datetime.datetime(2024, 10, 8).astimezone(timezone('US/Pacific'))
         
         return blogEntry
     

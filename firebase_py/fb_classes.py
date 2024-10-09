@@ -49,7 +49,10 @@ class BlogEntry:
         self.title=""
         self.subtitle=""
         self.desc=""
-        self.body=""
         self.img=""
         self.links=[]
         self.date=datetime.datetime(2022, 1, 1).astimezone(timezone('US/Pacific'))  # year, month, day
+        self.qa=[]
+        
+    def add_qa(self, question: str, answer: str):
+        self.qa.append({"question": question, "answer": answer})
