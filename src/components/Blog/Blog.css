@@ -75,6 +75,11 @@
     text-decoration: underline;
 }
 
+.qa-question {
+    color: var(--main-dark);
+    font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
     .blog-container {
         margin: 0 auto;

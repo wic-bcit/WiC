@@ -39,7 +39,13 @@ export default function EventTemplate(props: any = 0) {
                                 <h3>{e.subtitle}</h3>
                                 <h4>{e.date.toDate().toDateString()}</h4>
                                 <Text>{e.description.replaceAll("/n", "\n")}</Text>
-                                <Text>{e.body.replaceAll("/n", "\n")}</Text>
+
+                                {e.qa.map((qa, index) => ( 
+                                    <div key={index}>
+                                        <p className="qa-question">💭{qa.question}</p>
+                                        <p>{qa.answer}</p>
+                                    </div>
+                                ))}
 
                                 {e.links.map((link: Links, key1: number) => {
                                     return (

@@ -5,14 +5,19 @@ export interface Links {
   url: string;
 }
 
-//change
 export interface Entry {
   date: Timestamp;
   title: string;
   subtitle: string;
   description: string;
-  body: string;
+  qa: QA[];
   img: string;
   links: Links[];
   id: string;
 } 
+
+export interface QA {
+  question: string;
+  answer: string;
+}
+
