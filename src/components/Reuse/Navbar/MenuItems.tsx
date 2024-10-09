@@ -25,7 +25,7 @@ export const MenuItems = [
     url: "/",
     cName: "nav-links",
     id: "Blog",
-    offset: 0,
+    offset: -150,
   },
   {
     title: "Join Us",
