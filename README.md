@@ -4,11 +4,12 @@ This website is created using React. If you've taken the Intro to Web Dev course
 
 # Before you start
 
-1. Have nodejs instaled [https://nodejs.org/en/]
+1. Have nodejs instaled [https://nodejs.org/en/] (uses Node version 16!)
 2. Create a branch for yourself
 3. View the TODO file to see what else needs to done.
 4. Inform the group chat (WhatsApp/Discord) if you will be working on a section
 5. Message the WhastsApp or the Discrod chat if you have any questions
+6. IMPORTANT: You need the `.env` and `wicwebsite.json` files to update firebase. The `.env` file must be in the ROOT folder (WIC/.env) and `wicwebsite.json` must be in the firebase_py folder (WIC/firebase_py/wicwebsite.json). You can find these two files in WiC's Google Drive > Website > Secrets. Check out the Discord if you are confused. 
 
 ## Data Strucure
 
@@ -99,6 +100,54 @@ Best use for updating minor changes to existing event. You can still use this fo
 - date:timestamp = <Add date field, time field can be left empty>
 - time:string = <Time of event>
 - venue:string = <Platform using (Discord, Zoom, etc.)>
+```
+# Updating Firebase Blog 
+
+Run the script to add events with the necessary fields.
+
+1. `cd ./firebase_py/`
+2. Go to `fb.py` modify `set_entry_info()` and change the following:
+
+```
+    
+    def set_entry_info(self):
+        description = (
+"""
+""")
+        
+        
+        # Add new blog entry 
+        blogEntry = BlogEntry()
+        blogEntry.title = ""
+        blogEntry.subtitle = ""
+        blogEntry.desc = description.replace("\n", "/n")
+        blogEntry.img = ""
+        
+        # Add questions and answers (Q: [question], [answer])
+        blogEntry.add_qa("Q: ","")
+        
+        # uncomment if additional links needed
+        blogEntry.links.append({"name":"", "url":""})
+        
+        # year, month, day
+        blogEntry.date = datetime.datetime(2024, 10, 8).astimezone(timezone('US/Pacific'))
+        
+        return blogEntry
+    
+```
+
+3. Go to main and uncomment the following (Make sure the other functions in main are commented out unless you are using them)
+
+```
+# ADD NEW BLOG ENTRY: Uncomment and modify set_entry_info() 
+# blogEntry = fb.set_entry_info()
+# fb.add_blog_entry(blogEntry)
+```
+
+4. Run the following command:
+
+```
+python fb.py
 ```
 
 # Updating Firebase Execs
