@@ -4,7 +4,6 @@ import HomePage from "./components/Home/HomePage";
 import EventsPage from "./components/Events/EventsPage";
 import BlogPage from "./components/Blog/BlogPage";
 import "./App.css"; 
-import { blog_route, events_route } from "./Routes";
 
 class App extends React.Component {
   render() {
@@ -14,8 +13,8 @@ class App extends React.Component {
           <div>
             <Routes>
               <Route path={"/"} element={<HomePage />} />
-              <Route path={events_route} element={<EventsPage />} />
-              <Route path={blog_route} element={<BlogPage />} />
+              <Route path={"events-page"} element={<EventsPage />} />
+              <Route path={"/blog-page"} element={<BlogPage />} />
             </Routes>
           </div>
         </Router>
