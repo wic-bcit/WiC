@@ -38,12 +38,38 @@ export default function EventTemplate(props: any = 0) {
                                 <h2>{e.title}</h2>
                                 <h3>{e.subtitle}</h3>
                                 <h4>{e.date.toDate().toDateString()}</h4>
-                                <Text>{e.description.replaceAll("/n", "\n")}</Text>
+                                {e.description.replaceAll('/n', '\n').split(/(\*\*.*?\*\*|__.*?__)/).map((part, index) => (
+                                    <Text
+                                        key={index}
+                                        style={
+                                            part.startsWith('**') && part.endsWith('**')
+                                                ? { fontWeight: 'bold' }
+                                                : part.startsWith('__') && part.endsWith('__')
+                                                    ? { fontStyle: 'italic' }
+                                                    : {}
+                                        }
+                                    >
+                                        {part.replace(/\*\*|__/g, '')}
+                                    </Text>
+                                ))}
 
-                                {e.qa.map((qa, index) => ( 
+                                {e.qa.map((qa, index) => (
                                     <div key={index}>
                                         <p className="qa-question">💭{qa.question}</p>
-                                        <p>{qa.answer}</p>
+                                        {qa.answer.replaceAll('/n', '\n').split(/(\*\*.*?\*\*|__.*?__)/).map((part, i) => (
+                                            <Text
+                                                key={i}
+                                                style={
+                                                    part.startsWith('**') && part.endsWith('**')
+                                                        ? { fontWeight: 'bold' }
+                                                        : part.startsWith('__') && part.endsWith('__')
+                                                            ? { fontStyle: 'italic' }
+                                                            : {}
+                                                }
+                                            >
+                                                {part.replace(/\*\*|__/g, '')}
+                                            </Text>
+                                        ))}
                                     </div>
                                 ))}
 

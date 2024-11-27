@@ -221,8 +221,8 @@ python fb.py
 
 ## Starting React
 
-1. `npm install` this will install the packages needed to build react
-2. `npm start` this starts up the server and automatically open the page on your browser.
+1. `npm install` this will install the packages needed to build react (uses Node version 16!)
+2. `npm start` this starts up the server and automatically open the page on your browser. (uses Node version 16!)
 3. `http://localhost:3000`
 4. Check `/src/Routes.tsx` if browser shows a blank screen. Change the browser url if necessary.
 
