@@ -1,7 +1,7 @@
 {
   "main.css": "/WiC/static/css/main.2a55f262.chunk.css",
-  "main.js": "/WiC/static/js/main.15bfd0ab.chunk.js",
-  "main.js.map": "/WiC/static/js/main.15bfd0ab.chunk.js.map",
+  "main.js": "/WiC/static/js/main.c4d11cc3.chunk.js",
+  "main.js.map": "/WiC/static/js/main.c4d11cc3.chunk.js.map",
   "static/js/1.e4c12325.chunk.js": "/WiC/static/js/1.e4c12325.chunk.js",
   "static/js/1.e4c12325.chunk.js.map": "/WiC/static/js/1.e4c12325.chunk.js.map",
   "static/js/2.823c0691.chunk.js": "/WiC/static/js/2.823c0691.chunk.js",
@@ -10,6 +10,6 @@
   "runtime~main.js.map": "/WiC/static/js/runtime~main.c6b625e3.js.map",
   "static/css/main.2a55f262.chunk.css.map": "/WiC/static/css/main.2a55f262.chunk.css.map",
   "index.html": "/WiC/index.html",
-  "precache-manifest.5355bc95b937a54d60891b6fcbdd49de.js": "/WiC/precache-manifest.5355bc95b937a54d60891b6fcbdd49de.js",
+  "precache-manifest.0a72f145eb4369c82bd9440edceb89f8.js": "/WiC/precache-manifest.0a72f145eb4369c82bd9440edceb89f8.js",
   "service-worker.js": "/WiC/service-worker.js"
 }
