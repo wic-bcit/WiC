@@ -1,15 +1,15 @@
 {
-  "main.css": "/WiC/static/css/main.2a55f262.chunk.css",
-  "main.js": "/WiC/static/js/main.c4d11cc3.chunk.js",
-  "main.js.map": "/WiC/static/js/main.c4d11cc3.chunk.js.map",
+  "main.css": "/WiC/static/css/main.c9f360ab.chunk.css",
+  "main.js": "/WiC/static/js/main.dc4d0492.chunk.js",
+  "main.js.map": "/WiC/static/js/main.dc4d0492.chunk.js.map",
   "static/js/1.e4c12325.chunk.js": "/WiC/static/js/1.e4c12325.chunk.js",
   "static/js/1.e4c12325.chunk.js.map": "/WiC/static/js/1.e4c12325.chunk.js.map",
   "static/js/2.823c0691.chunk.js": "/WiC/static/js/2.823c0691.chunk.js",
   "static/js/2.823c0691.chunk.js.map": "/WiC/static/js/2.823c0691.chunk.js.map",
   "runtime~main.js": "/WiC/static/js/runtime~main.c6b625e3.js",
   "runtime~main.js.map": "/WiC/static/js/runtime~main.c6b625e3.js.map",
-  "static/css/main.2a55f262.chunk.css.map": "/WiC/static/css/main.2a55f262.chunk.css.map",
+  "static/css/main.c9f360ab.chunk.css.map": "/WiC/static/css/main.c9f360ab.chunk.css.map",
   "index.html": "/WiC/index.html",
-  "precache-manifest.0a72f145eb4369c82bd9440edceb89f8.js": "/WiC/precache-manifest.0a72f145eb4369c82bd9440edceb89f8.js",
+  "precache-manifest.7a49c19aba9ff4be589d6512b55b17c1.js": "/WiC/precache-manifest.7a49c19aba9ff4be589d6512b55b17c1.js",
   "service-worker.js": "/WiC/service-worker.js"
 }

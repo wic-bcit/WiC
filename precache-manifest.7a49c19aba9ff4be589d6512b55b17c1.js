@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c4d11cc34d6b345613ac",
-    "url": "/WiC/static/css/main.2a55f262.chunk.css"
+    "revision": "dc4d0492cffa12c0882c",
+    "url": "/WiC/static/css/main.c9f360ab.chunk.css"
   },
   {
-    "revision": "c4d11cc34d6b345613ac",
-    "url": "/WiC/static/js/main.c4d11cc3.chunk.js"
+    "revision": "dc4d0492cffa12c0882c",
+    "url": "/WiC/static/js/main.dc4d0492.chunk.js"
   },
   {
     "revision": "e4c123256ec82141fcb1",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/WiC/static/js/runtime~main.c6b625e3.js"
   },
   {
-    "revision": "6f52086483e097300ab2f9b03bffbe01",
+    "revision": "a938dfc183c08074447e10e01910811a",
     "url": "/WiC/index.html"
   }
 ];
