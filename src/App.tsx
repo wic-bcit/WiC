@@ -14,9 +14,9 @@ class App extends React.Component {
           <div>
             <Routes>
               <Route path={"/"} element={<HomePage />} />
-              <Route path={"/events-page"} element={<EventsPage />} />
-              <Route path={"/team-page"} element={<TeamPage />} />
-              <Route path={"/blog-page"} element={<BlogPage />} />
+              <Route path={"events-page"} element={<EventsPage />} />
+              {/* <Route path={"/team-page"} element={<TeamPage />} /> */}
+              <Route path={"blog-page"} element={<BlogPage />} />
             </Routes>
           </div>
         </Router>
