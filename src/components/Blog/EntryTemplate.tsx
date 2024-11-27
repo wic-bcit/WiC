@@ -38,40 +38,50 @@ export default function EventTemplate(props: any = 0) {
                                 <h2>{e.title}</h2>
                                 <h3>{e.subtitle}</h3>
                                 <h4>{e.date.toDate().toDateString()}</h4>
-                                {e.description.replaceAll('/n', '\n').split(/(\*\*.*?\*\*|__.*?__)/).map((part, index) => (
-                                    <Text
-                                        key={index}
-                                        style={
-                                            part.startsWith('**') && part.endsWith('**')
-                                                ? { fontWeight: 'bold' }
-                                                : part.startsWith('__') && part.endsWith('__')
-                                                    ? { fontStyle: 'italic' }
-                                                    : {}
-                                        }
-                                    >
-                                        {part.replace(/\*\*|__/g, '')}
-                                    </Text>
-                                ))}
+                                {e.description
+                                    .replaceAll('/n', '\n') 
+                                    .split('\n') 
+                                    .map((line, index) => (
+                                        <p key={index}>
+                                            {line.split(/(\*\*.*?\*\*|__.*?__)/).map((part, i) => (
+                                                <span
+                                                    key={i}
+                                                    style={{
+                                                        fontWeight: part.startsWith('**') && part.endsWith('**') ? 'bold' : 'normal',
+                                                        fontStyle: part.startsWith('__') && part.endsWith('__') ? 'italic' : 'normal',
+                                                    }}
+                                                >
+                                                    {part.replace(/\*\*|__/g, '')}
+                                                </span>
+                                            ))}
+                                        </p>
+                                    ))}
+
 
                                 {e.qa.map((qa, index) => (
                                     <div key={index}>
-                                        <p className="qa-question">💭{qa.question}</p>
-                                        {qa.answer.replaceAll('/n', '\n').split(/(\*\*.*?\*\*|__.*?__)/).map((part, i) => (
-                                            <Text
-                                                key={i}
-                                                style={
-                                                    part.startsWith('**') && part.endsWith('**')
-                                                        ? { fontWeight: 'bold' }
-                                                        : part.startsWith('__') && part.endsWith('__')
-                                                            ? { fontStyle: 'italic' }
-                                                            : {}
-                                                }
-                                            >
-                                                {part.replace(/\*\*|__/g, '')}
-                                            </Text>
-                                        ))}
+                                        <p className="qa-question">💭 {qa.question}</p>
+                                        {qa.answer
+                                            .replaceAll('/n', '\n')  
+                                            .split('\n')  
+                                            .map((line, lineIndex) => (
+                                                <p key={lineIndex}>
+                                                    {line.split(/(\*\*.*?\*\*|__.*?__)/).map((part, i) => (
+                                                        <span
+                                                            key={i}
+                                                            style={{
+                                                                fontWeight: part.startsWith('**') && part.endsWith('**') ? 'bold' : 'normal',
+                                                                fontStyle: part.startsWith('__') && part.endsWith('__') ? 'italic' : 'normal',
+                                                            }}
+                                                        >
+                                                            {part.replace(/\*\*|__/g, '')}
+                                                        </span>
+                                                    ))}
+                                                </p>
+                                            ))}
                                     </div>
                                 ))}
+
 
                                 {e.links.map((link: Links, key1: number) => {
                                     return (
