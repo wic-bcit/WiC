@@ -12,6 +12,7 @@
   margin: 0 auto;
 }
 
+
 .socials {
   font-family: var(--font-text);
   font-size: var(--font-size-m);
@@ -43,4 +44,8 @@
   font-family: var(--font-text);
   color: var(--main-dark);
   font-size: var(--font-size-m);
+}
+
+.test123 {
+  color: black
 }
