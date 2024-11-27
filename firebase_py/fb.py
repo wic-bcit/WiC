@@ -63,27 +63,27 @@ class Firebase:
    
     def set_event_info(self):
         description = (
-"""✨Join us for an exciting and insightful evening with Shamez Meghji, a Software Development Engineer at Amazon in Vancouver! \
-    On Wednesday, October 2nd, 2024, Shamez will be visiting BCIT's Downtown Campus to share his experiences working at Amazon, offering a unique perspective on life as an SDE at one of the world’s leading tech companies. \
-    This is a fantastic opportunity for anyone interested in tech, software development, or the inner workings of Amazon. ☁️
+"""I hope your midterms were a success for those who finished, and best of luck to everyone still taking them!\n\n\
+Take a breather and join us for an exciting tour of SAP's facilities. After the tour, you'll have a chance to participate in a fireside chat with SAP's COO. This is a fantastic opportunity to learn more about SAP, its vibrant culture, and to network with others!\n\
+Note: You will be placed on the waitlist when all seats are filled.
 """)
         
         # Add Event 
         event = Event()
-        event.title = "Talk with Shamez"
+        event.title = "SAP Company Tour and Panel"
         event.desc = description.replace("\n", "/n")
         
-        event.img = "https://firebasestorage.googleapis.com/v0/b/wicwebiste.appspot.com/o/2024%2FshamezTalk.png?alt=media&token=63b31054-ce25-4a7b-8d14-d50554acd99c"
+        event.img = "https://firebasestorage.googleapis.com/v0/b/wicwebiste.appspot.com/o/2024%2Fsap.png?alt=media&token=118f8bda-0241-4ebc-b317-e3df3cd9dbbb"
         event.is_active = True
-        event.register = ""
+        event.register = "https://docs.google.com/forms/d/e/1FAIpQLSd7Vq_NZmV7ol84gRlfi9-l78LTG9cg4lh0KAv2g6m5QzJQGA/viewform"
         
         # uncomment if additional links needed
         # event.links.append({"name":"", "url":""})
         
         # year, month, day
-        event.date = datetime.datetime(2024, 10, 2).astimezone(timezone('US/Pacific'))
-        event.time = "5:00-7:00 pm"
-        event.venue = "BCIT Downtown, Room 552"
+        event.date = datetime.datetime(2024, 11, 13).astimezone(timezone('US/Pacific'))
+        event.time = "3:00-5:00 pm"
+        event.venue = "SAP Vancouver"
         
         return event
         
@@ -139,25 +139,37 @@ class Firebase:
     
     def set_entry_info(self):
         description = (
-"""
+"""This blog post summarizes the key insights from the SAP Company Tour & Panel event held on November 13, 2024. The panel featured SAP interns and employees who shared their experiences, offering advice on navigating SAP's work culture, career growth, and skills development.💡🌟\nDisclaimer: The following notes are paraphrased and may not be verbatim.\
+\n\nPanelists:\n\
+- Christine Vukusic (COO)\n\
+- Jaspreet Sidhu (Support Engineer Intern, prev. Cloud DevOps Engineer Intern)\n\
+- Victoria Lim (Digital Content Intern)\n\
+- Karleen Murphy (Enterprise Account Executive - SAP SuccessFactors)\n\
+- Devan Gee (Senior User Assistance Developer)\n\n\
+A special thank you to the panelists for sharing their valuable insight and experiences, and to everyone at SAP who made this event possible!👏
 """)
         
         
         # Add new blog entry 
         blogEntry = BlogEntry()
-        blogEntry.title = ""
-        blogEntry.subtitle = ""
-        blogEntry.desc = description.replace("\n", "/n")
-        blogEntry.img = ""
+        blogEntry.title = "SAP Panel 2024: Insights and Career Tips"
+        blogEntry.subtitle = "Key Takeaways from the SAP Panel Discussion"
+        blogEntry.img = "https://firebasestorage.googleapis.com/v0/b/wicwebiste.appspot.com/o/2024%2FSAPPanel.jpg?alt=media&token=f851e7a2-a6ff-4f7f-9ef7-d76ac340c0fd"
         
         # Add questions and answers (Q: [question], [answer])
-        blogEntry.add_qa("Q: ","")
+        question = "Q: Can you describe what a typical day looks like in your role?"
+        answer =  """**Jaspreet:** My day involves handling customer cases, resolving issues, attending meetings, and developing internal tools for the team.\n\n\
+**Victoria:** I focus on collecting and transforming customer success stories into engaging formats like slide decks, videos, and Sharpoints, while also creating and sending newsletters within the company.\n\n\
+Karleen: My role involves three key aspects. First is educating customers about our products and tailored marketing events. Second is building relationships by understanding client problems. Third is informing, where I host demos to showcase how our products address customer needs.\n\n\
+Devan: I collaborate with developers and designers to ensure UI consistency and create clear, user-friendly messaging. I also write and publish instructions that help users navigate product features effectively."""
+        
+        blogEntry.add_qa(question, answer)
         
         # uncomment if additional links needed
-        blogEntry.links.append({"name":"", "url":""})
+        # blogEntry.links.append({"name":"", "url":""})
         
         # year, month, day
-        blogEntry.date = datetime.datetime(2024, 10, 8).astimezone(timezone('US/Pacific'))
+        blogEntry.date = datetime.datetime(2024, 11, 26).astimezone(timezone('US/Pacific'))
         
         return blogEntry
     
@@ -170,12 +182,12 @@ if __name__ == "__main__":
     # fb.add_event(event)
 
     # ADD NEW BLOG ENTRY: Uncomment and modify set_entry_info() 
-    # blogEntry = fb.set_entry_info()
-    # fb.add_blog_entry(blogEntry)
+    blogEntry = fb.set_entry_info()
+    fb.add_blog_entry(blogEntry)
     
     
     
-    #########################
+    ######################### vvv not used in site currently
     # ADD NEW EXECE MEMBERS: Uncomment and modify set_exec_info() 
     # exec = fb.set_exec_info()
     # fb.add_exec(exec)
